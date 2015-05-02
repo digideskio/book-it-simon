@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Item Properties - ReadItem</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="stylesheet" type="text/css" media="all"
+            href="css/itemPropsRD.css" />
+        <script type="text/javascript" 
+            src="js/jquery/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript"
+            src="js/office/MicrosoftAjax.js"></script>
+        <!-- Use the CDN reference to Office.js when deploying your app. -->
+        <script type="text/javascript" 
+            src="https://appsforoffice.microsoft.com/lib/1.0/hosted/office.js"></script>
+        <script type="text/javascript"
+            src="js/itemPropsRD.js"></script>
+    </head>
+    <body>
+        <div id="apiReady">API NOT READY</div>
+        <div id="container">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="propName firstRow">userProfile</td>
+                    <td id="userProfile" class="propVal firstRow"></td>
+                </tr>
+                <tr>
+                    <td class="propName">subject</td>
+                    <td id="subject" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">normalizedSubject</td>
+                    <td id="normalizedSubject" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">itemClass</td>
+                    <td id="itemClass" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">itemType</td>
+                    <td id="itemType" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">dateTimeCreated</td>
+                    <td id="dateTimeCreated" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">dateTimeModified</td>
+                    <td id="dateTimeModified" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">itemId (EWS ID)</td>
+                    <td id="itemId" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">conversationId</td>
+                    <td id="conversationId" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">internetMessageId</td>
+                    <td id="internetMessageId" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">start</td>
+                    <td id="start" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">end</td>
+                    <td id="end" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">location</td>
+                    <td id="location" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">from</td>
+                    <td id="from" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">sender</td>
+                    <td id="sender" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">to</td>
+                    <td id="to" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">cc</td>
+                    <td id="cc" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">organizer</td>
+                    <td id="organizer" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">requiredAttendees</td>
+                    <td id="requiredAttendees" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">optionalAttendees</td>
+                    <td id="optionalAttendees" class="propVal"></td>
+                </tr>
+                <tr>
+                    <td class="propName">resources</td>
+                    <td id="resources" class="propVal"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

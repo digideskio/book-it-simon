@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+    <Id>703c34eb-ed4f-1999-a89b-ad89873e146f</Id>
+    <Version>1.0</Version>
+    <ProviderName>Microsoft</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName DefaultValue="Debug (Other)"/>
+    <Description DefaultValue=
+        "Display item properties values available for read item or read-write mailbox permission."/>
+    <Capabilities>
+        <Capability Name="Mailbox"/>
+    </Capabilities>
+    <DesktopSettings>
+        <!-- Change the following line to specify the web server -->
+        <!-- that hosts the HTML file. -->
+        <SourceLocation DefaultValue=
+            "https://bookitsimon.tk/tools/ItemPropertiesMailAppOtherPerms/itemPropsRD.html"/>
+        <RequestedHeight>450</RequestedHeight>
+    </DesktopSettings>
+    <Permissions>ReadItem</Permissions>
+    <Rule xsi:type="RuleCollection" Mode="Or">
+        <Rule xsi:type="ItemIs" ItemType="Message"/>
+        <Rule xsi:type="ItemIs" ItemType="Appointment"/>
+    </Rule>
+    <DisableEntityHighlighting>false</DisableEntityHighlighting>
+</OfficeApp>

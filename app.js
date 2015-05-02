@@ -10,8 +10,8 @@ var debug = require('debug')('bookitsimon:app');
 var http = require('http');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -59,16 +59,25 @@ app.use(function(err, req, res, next) {
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-var server = http.createServer(app);
+
+var httpsrv = http.createServer(app);
+var httpsSrv = https.createServer(
+  {key:fs.readFileSync('bookitsimon-key.pem'), 
+  cert:fs.readFileSync('bookitsimon-cert.pem')}
+  , app);
+
+httpsSrv.listen(443);
+
+// var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+httpsrv.listen(port);
 debug("listening to port", port);
-server.on('error', onError);
-server.on('listening', onListening);
+httpsrv.on('error', onError);
+httpsrv.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
@@ -123,7 +132,7 @@ function onError(error) {
  */
 
 function onListening() {
-  var addr = server.address();
+  var addr = httpsrv.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
