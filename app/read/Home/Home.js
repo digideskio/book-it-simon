@@ -5,10 +5,13 @@
 
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
+        myOm = Office.context.mailbox; 
+        
         $(document).ready(function () {
             app.initialize();
 
             displayItemDetails();
+            window.createAppointment = createAppointment;
         });
     };
 
@@ -30,5 +33,23 @@
                 app.showNotification(from.displayName, from.emailAddress);
             });
         }
+    }
+
+    function createAppointment() {
+        var formParameters =
+        {
+            "requiredAttendees" : ["wendy@contoso.com", "derek@contoso.com"],
+            "optionalAttendees" : ["shane@contoso.com", "michael@contoso.com"],
+            "start" : new Date("September 27, 2012 11:15:00"),
+            "end" : new Date("September 27, 2012 12:30:00"),
+            "location" : "Conf room 200",
+            "resources" : ['sound', 'lighting', 'recording'],
+            "subject" : "Next rehearsal",
+            "body" : "This is about the next rehearsal."
+        }
+
+        // Display a form to create an appointment with
+        // the specified parameters.
+        myOm.displayNewAppointmentForm(formParameters);
     }
 })();
