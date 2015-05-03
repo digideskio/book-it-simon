@@ -15,7 +15,7 @@ returnFlight.date			 		2015-05-21
 
 ## Sample HTML
 ```
-<form action="/search">
+<form action="/search" method="post">
 	<div>Departure</div>
 	<label for="depOrig">Departure</label><input id="depOrig" name="departureFlight.origin" type="text" value="DCA"/>
 	<label for="depDest">Departure</label><input id="depDest" name="departureFlight.destination" type="text" value="SEA"/>
