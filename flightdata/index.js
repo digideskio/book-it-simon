@@ -53,7 +53,7 @@ module.exports = {
 						origin: body["departureFlight.origin"] ,
 						destination: body["departureFlight.destination"],
 						date: body["departureFlight.date"],
-						preferredCabin: (body["passengers.preferredCabin"]) ? body["passengers.preferredCabin"] : "COACH",
+						preferredCabin: (body["departureFlight.preferredCabin"]) ? body["departureFlight.preferredCabin"] : "COACH",
 						permittedDepartureTime: {
 							earliestTime: (body["departureFlight.permittedDepartureTime"] && body["departureFlight.permittedDepartureTime.earliestTime"]) ? body["departureFlight.permittedDepartureTime.earliestTime"] : "10:00",
 							latestTime: (body["departureFlight.latestTime"] && body["departureFlight.permittedDepartureTime.latestTime"]) ? body["departureFlight.permittedDepartureTime.latestTime"] : "12:00"
@@ -63,7 +63,7 @@ module.exports = {
 						origin: body["returnFlight.origin"],
 						destination: body["returnFlight.destination"],
 						date: body["returnFlight.date"],
-						preferredCabin: (body["passengers.preferredCabin"]) ? body["passengers.preferredCabin"] : "COACH",
+						preferredCabin: (body["returnFlight.preferredCabin"]) ? body["returnFlight.preferredCabin"] : "COACH",
 						permittedDepartureTime: {
 							earliestTime: (body["returnFlight.permittedDepartureTime"] && body["returnFlight.permittedDepartureTime.earliestTime"]) ? body["returnFlight.permittedDepartureTime.earliestTime"] : "10:00",
 							latestTime: (body["returnFlight.latestTime"] && body["returnFlight.permittedDepartureTime.latestTime"]) ? body["returnFlight.permittedDepartureTime.latestTime"] : "12:00"
