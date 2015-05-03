@@ -17,6 +17,10 @@
             displayItemDetails();
             window.createAppointment = createAppointment;
 
+            $('#datepick-start').placeholder.value(_getDateString(item.start));
+
+            $('#datepick-end').placeholder.value(_getDateString(item.end));
+
             $('#content-main .input-daterange').datepicker({
                 orientation: "auto",
                 startDate: _getDateString(item.start),
