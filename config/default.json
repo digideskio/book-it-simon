@@ -1,6 +1,7 @@
 {
   "googleApi": {
-    "apiKey": "AIzaSyCA73ff5oTYo2x4R-AdcYMs",
-    "contentType": "application/json"
+    "apiKey": "AIzaSyCA73ff5oTYo2x4R-AdcYMs-C_YFfHyTLw",
+    "contentType": "application/json",
+    "url": "https://www.googleapis.com/qpxExpress/v1/trips/search"
   }
 }

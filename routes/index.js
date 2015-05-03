@@ -8,5 +8,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/sample', api.getSample);
+router.post('/search', api.search);
 
 module.exports = router;

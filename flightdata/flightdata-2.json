@@ -1,0 +1,825 @@
+{
+    "kind": "qpxExpress#tripsSearch",
+    "trips": {
+        "kind": "qpxexpress#tripOptions",
+        "requestId": "JNidqvaCCTTUln5gM0M3M0",
+        "data": {
+            "kind": "qpxexpress#data",
+            "airport": [
+                {
+                    "kind": "qpxexpress#airportData",
+                    "code": "DCA",
+                    "city": "WAS",
+                    "name": "Ronald Reagan Washington Nat'l"
+                },
+                {
+                    "kind": "qpxexpress#airportData",
+                    "code": "DFW",
+                    "city": "DFW",
+                    "name": "Dallas/Ft Worth International"
+                },
+                {
+                    "kind": "qpxexpress#airportData",
+                    "code": "PHX",
+                    "city": "PHX",
+                    "name": "Phoenix Sky Harbor Int'l"
+                },
+                {
+                    "kind": "qpxexpress#airportData",
+                    "code": "SEA",
+                    "city": "SEA",
+                    "name": "Seattle/Tacoma Sea/Tac"
+                }
+            ],
+            "city": [
+                {
+                    "kind": "qpxexpress#cityData",
+                    "code": "DFW",
+                    "name": "Dallas/Fort Worth"
+                },
+                {
+                    "kind": "qpxexpress#cityData",
+                    "code": "PHX",
+                    "name": "Phoenix"
+                },
+                {
+                    "kind": "qpxexpress#cityData",
+                    "code": "SEA",
+                    "name": "Seattle"
+                },
+                {
+                    "kind": "qpxexpress#cityData",
+                    "code": "WAS",
+                    "name": "Washington"
+                }
+            ],
+            "aircraft": [
+                {
+                    "kind": "qpxexpress#aircraftData",
+                    "code": "321",
+                    "name": "Airbus A321"
+                },
+                {
+                    "kind": "qpxexpress#aircraftData",
+                    "code": "738",
+                    "name": "Boeing 737"
+                }
+            ],
+            "tax": [
+                {
+                    "kind": "qpxexpress#taxData",
+                    "id": "ZP",
+                    "name": "US Flight Segment Tax"
+                },
+                {
+                    "kind": "qpxexpress#taxData",
+                    "id": "XF",
+                    "name": "US Passenger Facility Charge"
+                },
+                {
+                    "kind": "qpxexpress#taxData",
+                    "id": "US_001",
+                    "name": "US Transportation Tax"
+                },
+                {
+                    "kind": "qpxexpress#taxData",
+                    "id": "AY_001",
+                    "name": "US September 11th Security Fee"
+                }
+            ],
+            "carrier": [
+                {
+                    "kind": "qpxexpress#carrierData",
+                    "code": "US",
+                    "name": "US Airways, Inc."
+                }
+            ]
+        },
+        "tripOption": [
+            {
+                "kind": "qpxexpress#tripOption",
+                "saleTotal": "USD769.20",
+                "id": "TjIA6IIikmKTdbGWENBeVH001",
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo",
+                        "duration": 547,
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 297,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "679"
+                                },
+                                "id": "GRtGS7hnS3smTC7k",
+                                "cabin": "COACH",
+                                "bookingCode": "G",
+                                "bookingCodeCount": 9,
+                                "marriedSegmentGroup": "0",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "LAHCAPlATP-bYwqL",
+                                        "aircraft": "321",
+                                        "arrivalTime": "2015-05-08T12:42-07:00",
+                                        "departureTime": "2015-05-08T10:45-04:00",
+                                        "origin": "DCA",
+                                        "destination": "PHX",
+                                        "originTerminal": "C",
+                                        "destinationTerminal": "4",
+                                        "duration": 297,
+                                        "onTimePerformance": 81,
+                                        "mileage": 1973,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ],
+                                "connectionDuration": 68
+                            },
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 182,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "413"
+                                },
+                                "id": "G63n6XZ33Isptoto",
+                                "cabin": "COACH",
+                                "bookingCode": "G",
+                                "bookingCodeCount": 9,
+                                "marriedSegmentGroup": "0",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "L46H0CVViQMRoUOt",
+                                        "aircraft": "321",
+                                        "arrivalTime": "2015-05-08T16:52-07:00",
+                                        "departureTime": "2015-05-08T13:50-07:00",
+                                        "origin": "PHX",
+                                        "destination": "SEA",
+                                        "originTerminal": "4",
+                                        "duration": 182,
+                                        "onTimePerformance": 92,
+                                        "mileage": 1106,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "kind": "qpxexpress#sliceInfo",
+                        "duration": 487,
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 231,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "1402"
+                                },
+                                "id": "GDXp2+aQ4rZlOP5a",
+                                "cabin": "COACH",
+                                "bookingCode": "S",
+                                "bookingCodeCount": 4,
+                                "marriedSegmentGroup": "1",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "L72ZDQN7YYmvWmZ6",
+                                        "aircraft": "738",
+                                        "arrivalTime": "2015-05-21T17:44-05:00",
+                                        "departureTime": "2015-05-21T11:53-07:00",
+                                        "origin": "SEA",
+                                        "destination": "DFW",
+                                        "destinationTerminal": "0",
+                                        "duration": 231,
+                                        "operatingDisclosure": "OPERATED BY AMERICAN AIRLINES INC.",
+                                        "onTimePerformance": 84,
+                                        "mileage": 1657,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ],
+                                "connectionDuration": 68
+                            },
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 188,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "138"
+                                },
+                                "id": "GLKMOfAPCegj9H2q",
+                                "cabin": "COACH",
+                                "bookingCode": "S",
+                                "bookingCodeCount": 4,
+                                "marriedSegmentGroup": "1",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "L-caL8UbxvWd-CMm",
+                                        "aircraft": "738",
+                                        "arrivalTime": "2015-05-21T23:00-04:00",
+                                        "departureTime": "2015-05-21T18:52-05:00",
+                                        "origin": "DFW",
+                                        "destination": "DCA",
+                                        "originTerminal": "0",
+                                        "destinationTerminal": "B",
+                                        "duration": 188,
+                                        "operatingDisclosure": "OPERATED BY AMERICAN AIRLINES INC.",
+                                        "mileage": 1189,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo",
+                        "fare": [
+                            {
+                                "kind": "qpxexpress#fareInfo",
+                                "id": "AMSqje/5zwltYsl/xJpDcjm36Vbgyad8adffk4o5y4nFN8E",
+                                "carrier": "US",
+                                "origin": "WAS",
+                                "destination": "SEA",
+                                "basisCode": "GA00ZNG3"
+                            },
+                            {
+                                "kind": "qpxexpress#fareInfo",
+                                "id": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "carrier": "US",
+                                "origin": "SEA",
+                                "destination": "WAS",
+                                "basisCode": "SA07ZNX3"
+                            }
+                        ],
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "segmentId": "GLKMOfAPCegj9H2q",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "segmentId": "GDXp2+aQ4rZlOP5a",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AMSqje/5zwltYsl/xJpDcjm36Vbgyad8adffk4o5y4nFN8E",
+                                "segmentId": "GRtGS7hnS3smTC7k",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AMSqje/5zwltYsl/xJpDcjm36Vbgyad8adffk4o5y4nFN8E",
+                                "segmentId": "G63n6XZ33Isptoto",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "baseFareTotal": "USD673.49",
+                        "saleFareTotal": "USD673.49",
+                        "saleTaxTotal": "USD95.71",
+                        "saleTotal": "USD769.20",
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts",
+                            "adultCount": 1
+                        },
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "US_001",
+                                "chargeType": "GOVERNMENT",
+                                "code": "US",
+                                "country": "US",
+                                "salePrice": "USD50.51"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "AY_001",
+                                "chargeType": "GOVERNMENT",
+                                "code": "AY",
+                                "country": "US",
+                                "salePrice": "USD11.20"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "XF",
+                                "chargeType": "GOVERNMENT",
+                                "code": "XF",
+                                "country": "US",
+                                "salePrice": "USD18.00"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "ZP",
+                                "chargeType": "GOVERNMENT",
+                                "code": "ZP",
+                                "country": "US",
+                                "salePrice": "USD16.00"
+                            }
+                        ],
+                        "fareCalculation": "WAS US X/PHX US SEA 341.40GA00ZNG3 US X/DFW US WAS Q SEAWAS13.95 318.14SA07ZNX3 USD 673.49 END ZP DCA PHX SEA DFW XT 50.51US 16.00ZP 11.20AY 18.00XF DCA4.50 PHX4.50 SEA4.50 DFW4.50",
+                        "latestTicketingTime": "2015-05-04T23:59-04:00",
+                        "ptc": "ADT"
+                    }
+                ]
+            },
+            {
+                "kind": "qpxexpress#tripOption",
+                "saleTotal": "USD927.20",
+                "id": "TjIA6IIikmKTdbGWENBeVH002",
+                "slice": [
+                    {
+                        "kind": "qpxexpress#sliceInfo",
+                        "duration": 713,
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 297,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "679"
+                                },
+                                "id": "GRtGS7hnS3smTC7k",
+                                "cabin": "COACH",
+                                "bookingCode": "L",
+                                "bookingCodeCount": 9,
+                                "marriedSegmentGroup": "0",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "LAHCAPlATP-bYwqL",
+                                        "aircraft": "321",
+                                        "arrivalTime": "2015-05-08T12:42-07:00",
+                                        "departureTime": "2015-05-08T10:45-04:00",
+                                        "origin": "DCA",
+                                        "destination": "PHX",
+                                        "originTerminal": "C",
+                                        "destinationTerminal": "4",
+                                        "duration": 297,
+                                        "onTimePerformance": 81,
+                                        "mileage": 1973,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ],
+                                "connectionDuration": 238
+                            },
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 178,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "521"
+                                },
+                                "id": "G8wr3IIKrxR4t8K1",
+                                "cabin": "COACH",
+                                "bookingCode": "L",
+                                "bookingCodeCount": 9,
+                                "marriedSegmentGroup": "0",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "LkLaI6saxat-PhxN",
+                                        "aircraft": "321",
+                                        "arrivalTime": "2015-05-08T19:38-07:00",
+                                        "departureTime": "2015-05-08T16:40-07:00",
+                                        "origin": "PHX",
+                                        "destination": "SEA",
+                                        "originTerminal": "4",
+                                        "duration": 178,
+                                        "onTimePerformance": 96,
+                                        "mileage": 1106,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "kind": "qpxexpress#sliceInfo",
+                        "duration": 487,
+                        "segment": [
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 231,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "1402"
+                                },
+                                "id": "GDXp2+aQ4rZlOP5a",
+                                "cabin": "COACH",
+                                "bookingCode": "S",
+                                "bookingCodeCount": 4,
+                                "marriedSegmentGroup": "1",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "L72ZDQN7YYmvWmZ6",
+                                        "aircraft": "738",
+                                        "arrivalTime": "2015-05-21T17:44-05:00",
+                                        "departureTime": "2015-05-21T11:53-07:00",
+                                        "origin": "SEA",
+                                        "destination": "DFW",
+                                        "destinationTerminal": "0",
+                                        "duration": 231,
+                                        "operatingDisclosure": "OPERATED BY AMERICAN AIRLINES INC.",
+                                        "onTimePerformance": 84,
+                                        "mileage": 1657,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ],
+                                "connectionDuration": 68
+                            },
+                            {
+                                "kind": "qpxexpress#segmentInfo",
+                                "duration": 188,
+                                "flight": {
+                                    "carrier": "US",
+                                    "number": "138"
+                                },
+                                "id": "GLKMOfAPCegj9H2q",
+                                "cabin": "COACH",
+                                "bookingCode": "S",
+                                "bookingCodeCount": 4,
+                                "marriedSegmentGroup": "1",
+                                "leg": [
+                                    {
+                                        "kind": "qpxexpress#legInfo",
+                                        "id": "L-caL8UbxvWd-CMm",
+                                        "aircraft": "738",
+                                        "arrivalTime": "2015-05-21T23:00-04:00",
+                                        "departureTime": "2015-05-21T18:52-05:00",
+                                        "origin": "DFW",
+                                        "destination": "DCA",
+                                        "originTerminal": "0",
+                                        "destinationTerminal": "B",
+                                        "duration": 188,
+                                        "operatingDisclosure": "OPERATED BY AMERICAN AIRLINES INC.",
+                                        "mileage": 1189,
+                                        "meal": "Food for Purchase",
+                                        "secure": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "pricing": [
+                    {
+                        "kind": "qpxexpress#pricingInfo",
+                        "fare": [
+                            {
+                                "kind": "qpxexpress#fareInfo",
+                                "id": "AkovktYcEJ/mcBInJ1pK0kK+qEZ/1IYkXtaLn6L0tjt7aBo",
+                                "carrier": "US",
+                                "origin": "WAS",
+                                "destination": "SEA",
+                                "basisCode": "LA00ZNX1"
+                            },
+                            {
+                                "kind": "qpxexpress#fareInfo",
+                                "id": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "carrier": "US",
+                                "origin": "SEA",
+                                "destination": "WAS",
+                                "basisCode": "SA07ZNX3"
+                            }
+                        ],
+                        "segmentPricing": [
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "segmentId": "GLKMOfAPCegj9H2q",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AeKj7foQP+sMzb2+4q3gMiFjOgjl8mswbEg2+ZxBAoLXXgU",
+                                "segmentId": "GDXp2+aQ4rZlOP5a",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AkovktYcEJ/mcBInJ1pK0kK+qEZ/1IYkXtaLn6L0tjt7aBo",
+                                "segmentId": "GRtGS7hnS3smTC7k",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "qpxexpress#segmentPricing",
+                                "fareId": "AkovktYcEJ/mcBInJ1pK0kK+qEZ/1IYkXtaLn6L0tjt7aBo",
+                                "segmentId": "G8wr3IIKrxR4t8K1",
+                                "freeBaggageOption": [
+                                    {
+                                        "kind": "qpxexpress#freeBaggageAllowance",
+                                        "bagDescriptor": [
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "ASSISTIVE DEVICES",
+                                                "count": 0,
+                                                "subcode": "0GM"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "INFANT CAR SEAT",
+                                                "count": 0,
+                                                "description": [
+                                                    "Infant Car Seat"
+                                                ],
+                                                "subcode": "0G5"
+                                            },
+                                            {
+                                                "kind": "qpxexpress#bagDescriptor",
+                                                "commercialName": "STROLLER OR PUSHCHAIR",
+                                                "count": 0,
+                                                "description": [
+                                                    "Stroller/Pushchair"
+                                                ],
+                                                "subcode": "0F4"
+                                            }
+                                        ],
+                                        "pieces": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "baseFareTotal": "USD820.46",
+                        "saleFareTotal": "USD820.46",
+                        "saleTaxTotal": "USD106.74",
+                        "saleTotal": "USD927.20",
+                        "passengers": {
+                            "kind": "qpxexpress#passengerCounts",
+                            "adultCount": 1
+                        },
+                        "tax": [
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "US_001",
+                                "chargeType": "GOVERNMENT",
+                                "code": "US",
+                                "country": "US",
+                                "salePrice": "USD61.54"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "AY_001",
+                                "chargeType": "GOVERNMENT",
+                                "code": "AY",
+                                "country": "US",
+                                "salePrice": "USD11.20"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "XF",
+                                "chargeType": "GOVERNMENT",
+                                "code": "XF",
+                                "country": "US",
+                                "salePrice": "USD18.00"
+                            },
+                            {
+                                "kind": "qpxexpress#taxInfo",
+                                "id": "ZP",
+                                "chargeType": "GOVERNMENT",
+                                "code": "ZP",
+                                "country": "US",
+                                "salePrice": "USD16.00"
+                            }
+                        ],
+                        "fareCalculation": "WAS US X/PHX US SEA 488.37LA00ZNX1 US X/DFW US WAS Q SEAWAS13.95 318.14SA07ZNX3 USD 820.46 END ZP DCA PHX SEA DFW XT 61.54US 16.00ZP 11.20AY 18.00XF DCA4.50 PHX4.50 SEA4.50 DFW4.50",
+                        "latestTicketingTime": "2015-05-04T23:59-04:00",
+                        "ptc": "ADT"
+                    }
+                ]
+            }
+        ]
+    }
+}

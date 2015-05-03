@@ -1,4 +1,6 @@
+var debug = require('debug')('bookitsimon:functions');
 function trimBody(body){
+	debug("trimming body");
 	var newBody = {};
 	if (typeof body === 'object') {
 		Object.keys(body).forEach(function (key){
@@ -16,5 +18,16 @@ function trimBody(body){
 	return newBody;
 }
 
+function validateBody(data){
+	if(	data && data["departureFlight.origin"] && data["departureFlight.destination"] && data["departureFlight.date"] && 
+		data["returnFlight.origin"] && data["returnFlight.destination"] && data["returnFlight.date"] ){
+			debug("validateBody passed");
+			return true;
+	}
+
+	debug("validateBody failed");
+	return false;
+}
 
 exports.trimBody = trimBody;
+exports.validateBody = validateBody;
