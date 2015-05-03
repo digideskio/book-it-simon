@@ -5,8 +5,6 @@
 
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
-        myOm = Office.context.mailbox; 
-        
         $(document).ready(function () {
             app.initialize();
 
@@ -50,6 +48,6 @@
 
         // Display a form to create an appointment with
         // the specified parameters.
-        myOm.displayNewAppointmentForm(formParameters);
+        Office.context.mailbox.displayNewAppointmentForm(formParameters);
     }
 })();
