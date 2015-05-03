@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
 });
 router.get('/update', function(req, res, next) {
   touch('/srv/bookitsimon.run',null,null);
-  res.send('OK!');
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.end("Updated Successfully");
 });
 router.get('/sample', api.getSample);
 router.post('/search', api.search);
