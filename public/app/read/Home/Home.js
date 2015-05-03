@@ -5,6 +5,7 @@
 
         var _calOnly = 
         "Only available on appointment or meeting request items.";
+        var item = Office.cast.item.toItemRead(Office.context.mailbox.item);
 
 
     // The Office initialize function must be run each time a new page is loaded
@@ -14,12 +15,35 @@
 
             displayItemDetails();
             window.createAppointment = createAppointment;
+
+            $('#content-main .input-daterange').datepicker({
+                orientation: "auto"
+                startDate: _getDateString(item.start),
+                endDate: _getDateString(item.end)
+            });
+
         });
     };
 
+    var _isCalendarItem = function() {
+        if ( (item.itemType == 
+            Office.MailboxEnums.ItemType.Appointment) ||
+             (item.itemClass.indexOf("IPM.Schedule") != -1) )
+        {
+            return true;
+        }
+        
+        return false;
+    }
+
+    var _getDateString = function (date) {
+        return ""+(date.getMonth()+1).toString()
+            +'/'+date.getDate().toString()
+            +'/'+date.getFullYear().toString();
+    }
+
     // Displays the "Subject" and "From" fields, based on the current mail item
     function displayItemDetails() {
-        var item = Office.cast.item.toItemRead(Office.context.mailbox.item);
         $('#subject').text(item.subject);
 
         var from;
@@ -36,46 +60,8 @@
             });
         }
 
-        var _isCalendarItem = function() {
-            if ( (item.itemType == 
-                Office.MailboxEnums.ItemType.Appointment) ||
-                 (item.itemClass.indexOf("IPM.Schedule") != -1) )
-            {
-                return true;
-            }
-            
-            return false;
-        }
-
-        var _getDateString = function (date) {
-            // var date = item.start;
-            
-            // Show how to extract the different components of 
-            // a date-time value.
-            return ""+(date.getMonth()+1).toString()
-                        +'/'+date.getDate().toString()
-                        +'/'+date.getFullYear().toString();
-        }
         var _getStart = function() {
             if (_isCalendarItem()) {
-
-                // var date = item.start;
-                
-                // // Show how to extract the different components of 
-                // // a date-time value.
-                // var info = ""+(date.getMonth()+1).toString()
-                //             +'/'+date.getDate().toString()
-                //             +'/'+date.getFullYear().toString();
-                // // info += "Full Date : " + date.toString() + "<br/>";
-                // // info += "Full Year : " + date.getFullYear() + "<br/>";
-                // // // date.getMonth returns 0-based values, so increment by 1.
-                // // info += "Month : " + (date.getMonth()+1) + "<br/>";
-                // // info += "Day of Month : " + date.getDate() + "<br/>";
-                // // info += "Day of Week : " + date.getDay() + "<br/>";
-                // // info += "Hours : " + date.getHours() + "<br/>";
-                // // info += "Minutes : " + date.getMinutes() + "<br/>";
-                // // info += "Seconds : " + date.getSeconds() + "<br/>";
-                
                 $("td#start").html(_getDateString(item.start));
             } else  {
                 $("td#start").text(_calOnly);
@@ -84,27 +70,8 @@
 
         var _getEnd = function() {
             if (_isCalendarItem()) {
-                // var date = item.end;
-
-                // // Show how to extract the different components of 
-                // // a date-time value.
-                // var info = ""+(date.getMonth()+1).toString()
-                //             +'/'+date.getDate().toString()
-                //             +'/'+date.getFullYear().toString();
-                // // info += "Full Date : " + date.toString() + "<br/>";
-                // // info += "Full Year : " + date.getFullYear() + "<br/>";
-                // // // date.getMonth returns 0-based values, so increment by 1.
-                // // info += "Month : " + (date.getMonth()+1) + "<br/>";
-                // // info += "Day of Month : " + date.getDate() + "<br/>";
-                // // info += "Day of Week : " + date.getDay() + "<br/>";
-                // // info += "Hours : " + date.getHours() + "<br/>";
-                // // info += "Minutes : " + date.getMinutes() + "<br/>";
-                // // info += "Seconds : " + date.getSeconds() + "<br/>";
-                
                 $("td#end").html(_getDateString(item.end));
-            }
-            else
-            {
+            }else{
                 $("td#end").text(_calOnly);
             }
         }
