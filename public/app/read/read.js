@@ -12,21 +12,17 @@
         item = Office.cast.item.toItemRead(Office.context.mailbox.item);
 
         $(document).ready(function () {
-            window.createAppointment = createAppointment;
+            $('#depDate')[0].value =_getDateString(item.start);
 
-            // console.log(JSON.stringify(item.location));
+            $('#retDate')[0].value =_getDateString(item.end);
 
-            $('#datepick-start')[0].attributes['placeholder'].value =_getDateString(item.start);
+            // $('#arrCity')[0].value = item.location;
 
-            $('#datepick-end')[0].attributes['placeholder'].value =_getDateString(item.end);
-
-            $('#arrCity')[0].value = item.location;
-
-            $('#content-main .input-daterange').datepicker({
-                orientation: "top",
-                startDate: _getDateString(item.start),
-                endDate: _getDateString(item.end)
-            });
+            // $('#content-main .input-daterange').datepicker({
+            //     orientation: "top",
+            //     startDate: _getDateString(item.start),
+            //     endDate: _getDateString(item.end)
+            // });
 
         });
     };

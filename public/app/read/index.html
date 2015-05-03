@@ -52,24 +52,81 @@
         <!--<div class="col-lg-3 col-md-2 col-sm-2"></div>-->
         <div class="row row-centered">
             <div class="col-lg-6 col-md-8 col-sm-8 col-centered">
-                <div class="container">
-                    <form action="/search" method="post">
+                <form action="/search" method="post">
                     <div class="row ">
-                        <div class="input-daterange input-group" id="datepicker">
-                            <input type="text" id="datepick-start" class="input-sm form-control" placeholder="1/1/2015" name="start">
-                            <span class="input-group-addon">to</span>
-                            <input type="text" id="datepick-end" class="input-sm form-control" placeholder="1/2/2015" name="end">
+                        <h3>Departure</h3>
+                        <div class="form-group">
+                            <label for="depOrig">From</label>
+                            <input id="depOrig" name="departureFlight.origin" type="text" value="DCA" class="form-control"/>
                         </div>
-                        <div class="row">&nbsp;</div>
-                    </div>
-                    </form>
-                    </div>
-                    <nav class="navbar navbar-inverse navbar-bottom navbar-fixed-bottom" style="padding:0 0 0 0; background-color: #383f46;min-height: 60px;margin-top: 60px;color:white;font-size: 13px;font-weight: bold">
+                        <div class="form-group">
+                            <label for="depDest">To</label>
+                            <input id="depDest" name="departureFlight.destination" type="text" value="SEA" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="depDate">Date</label>
+                            <input id="depDate" name="departureFlight.date" type="text" value="2015-05-08" class="form-control"/>
+                            <div class="form-group">
+                                <label for="depCabin">Preferred Cabin</label>
+                                <select id="depCabin" name="departureFlight.preferredCabin">
+                                    <options value="COACH" selected>Coach<option>
+                                        <options value="BUSINESS">Business Class<option>
+                                            <options value="FIRST">First Class<option>
+                                </select>
+                            </div>
+                        </div>
 
-                        <img  id="img-footer" width="25%" src="http://assets.concur.com/logos/Concur_Logo_HZ_Reverse_500px.png">
-                        <p>&nbsp;&nbsp; &copy; Copyright 2015 - Concur - All Rights Reserved</p>
-                    </nav>
+                    </div>
+                    <div class="row row-centered">
+                        <h3>Return</h3>
+                        <div class="form-group">
+                            <label for="retOrig">From</label>
+                            <input id="retOrig" name="returnFlight.origin" type="text" value="SEA" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="retDest">To</label>
+                            <input id="retDest" name="returnFlight.destination" type="text" value="DCA" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="retDate">Date</label>
+                            <input id="retDate" name="returnFlight.date" type="text" value="2015-05-21" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="retCabin">Preferred Cabin</label>
+                            <select id="retCabin" name="returnFlight.preferredCabin">
+                                <options value="COACH" selected>Coach<option>
+                                    <options value="BUSINESS">Business Class<option>
+                                        <options value="FIRST">First Class<option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                        <h3>Options</h3>
+                        <div class="form-group-inline">
+                            <label for="numPassengers">Departure</label>
+                            <input id="numPassengers" name="passengers.adultCount" type="text" value="1" class="form-control"/>
+                            <label for="nonstop">Non Stop</label>
+                            <input id="nonstop" type="checkbox">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
             </div>
+
+        </div>
+        <!--<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>-->
+
+        <div class="row">&nbsp;</div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-bottom navbar-fixed-bottom" style="padding:0 0 0 0; background-color: #383f46;min-height: 60px;margin-top: 60px;color:white;font-size: 13px;font-weight: bold">
+
+        <img  id="img-footer" width="25%" src="http://assets.concur.com/logos/Concur_Logo_HZ_Reverse_500px.png">
+        <p>&nbsp;&nbsp; &copy; Copyright 2015 - Concur - All Rights Reserved</p>
+
+
+    </nav>
+</div>
     <script src="read.js" type="text/javascript"></script>
 </body>
 </html>
