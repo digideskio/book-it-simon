@@ -25,7 +25,7 @@ app.use('/tools', express.static(__dirname + '/tools'));
 app.use('/app', express.static(__dirname + '/tools'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/', routes);
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
