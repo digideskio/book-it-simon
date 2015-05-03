@@ -16,12 +16,19 @@
   <script src="../public/js/respond.min.js"></script>
   <![endif]-->
 
-  <link rel="shortcut icon" href="images/favicon.png">
+  <!--<link rel="shortcut icon" href="../public/images/favicon.png">-->
   <script src="../public/js/pace.js"></script>
   <script>
     $("#scroll-explore").click(function() {
       $('html, body').animate({
         scrollTop: $("#explore").offset().top
+      }, 2000);
+    });
+  </script>
+  <script>
+    $("#scroll-top").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#top").offset().top
       }, 2000);
     });
   </script>
@@ -34,7 +41,7 @@
 <! -- ******************** MASTHEAD SECTION ******************** -->
 <main id="top" class="masthead" role="main">
   <div class="container">
-    <div class="logo"> <a href="index.html#"><img src="images/logo.png" alt="logo"></a>
+    <div class="logo"> <a href="http://bookitsimon.tk"><img src="../public/images/logo.png" alt="logo"></a>
     </div>
 
     <h1>The Most Handsome and <strong>Powerful Way</strong> <br>
@@ -42,7 +49,7 @@
 
     <div class="row">
       <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-        <form class="form-horizontal" role="form" action="subscribe.php" id="subscribeForm" method="POST">
+        <form class="form-horizontal" role="form" action="#" id="subscribeForm" method="POST">
           <div class="form-group">
             <div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
               <input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
@@ -154,7 +161,7 @@
         <div class="clientblock">
           <img src="../public/images/customer-img-1.jpg" alt=".">
           <p><strong>John Doe</strong> <br>
-            Founder of <a href="index.html#">Blacktie.co</a>
+            Founder of <a href="#">Blacktie.co</a>
           </p>
         </div>
       </div><! --/col-md-6 -->
@@ -164,7 +171,7 @@
         <div class="clientblock">
           <img src="../public/images/customer-img-2.jpg" alt=".">
           <p><strong>Richard Sommer</strong> <br>
-            CEO of <a href="index.html#">Blacktie.co</a>
+            CEO of <a href="#">Blacktie.co</a>
           </p>
         </div>
       </div><! --/col-md-6 -->
@@ -241,7 +248,7 @@
 
     <div class="row">
       <div class="col-md-12 breath text-center">
-        <a href="index.html#top" class="btn btn-success btn-lg gototop">GET EARLY ACCESS</a>
+        <a id="scroll-top" href="#" class="btn btn-success btn-lg gototop">GET EARLY ACCESS</a>
       </div>
     </div>
   </div><! --/container -->
