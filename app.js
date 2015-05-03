@@ -65,10 +65,11 @@ var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 var httpsrv = http.createServer(app);
-var httpsSrv = https.createServer(
-  {key:fs.readFileSync('bookitsimon-key.pem'), 
-  cert:fs.readFileSync('bookitsimon-cert.pem')}
-  , app);
+var httpsSrv = https.createServer({
+      key:fs.readFileSync('bookitsimon-key.pem'),
+      cert:fs.readFileSync('bookitsimon-cert.pem')},
+      app
+);
 
 httpsSrv.listen(443);
 
@@ -112,9 +113,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+  var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
@@ -137,9 +136,7 @@ function onError(error) {
 
 function onListening() {
   var addr = httpsrv.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+  var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
 
