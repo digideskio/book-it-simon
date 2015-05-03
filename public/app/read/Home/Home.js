@@ -33,6 +33,10 @@
         }
     }
 
+    function getAppointmentDateFromBody() {
+        
+    }
+
     function createAppointment() {
         var formParameters =
         {
