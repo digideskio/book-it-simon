@@ -17,13 +17,13 @@
             displayItemDetails();
             window.createAppointment = createAppointment;
 
-            console.log(JSON.Stringify(item.location));
+            // console.log(JSON.stringify(item.location));
 
             $('#datepick-start')[0].attributes['placeholder'].value =_getDateString(item.start);
 
             $('#datepick-end')[0].attributes['placeholder'].value =_getDateString(item.end);
 
-            $('#arrCity')[0].attributes['value'] = item.location.toString();
+            $('#arrCity')[0].attributes['value'] = item.location;
 
             $('#content-main .input-daterange').datepicker({
                 orientation: "top",
