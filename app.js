@@ -8,6 +8,8 @@ var routes = require('./routes/index');
 var app = express();
 var debug = require('debug')('bookitsimon:app');
 var http = require('http');
+var https = require('https');
+var fs = require('fs');
 
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
