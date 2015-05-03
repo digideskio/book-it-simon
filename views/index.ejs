@@ -18,20 +18,7 @@
 
   <!--<link rel="shortcut icon" href="/images/favicon.png">-->
   <script src="/js/pace.js"></script>
-  <script>
-    $("#scroll-explore").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#explore").offset().top
-      }, 2000);
-    });
-  </script>
-  <script>
-    $("#scroll-top").click(function() {
-      $('html, body').animate({
-        scrollTop: $("#top").offset().top
-      }, 2000);
-    });
-  </script>
+
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 </head>
 
@@ -61,7 +48,7 @@
         <span id="result" class="alertMsg"></span> </div>
     </div>
 
-    <a href="#" class="scrollto">
+    <a href="#" id="scroll-explore" class="scrollto">
       <p>SCROLL DOWN TO EXPLORE</p>
       <p class="scrollto--arrow"><img id="scroll-explore" src="/images/scroll_down.png" alt="scroll down arrow"></p>
     </a>
@@ -264,6 +251,20 @@
 
 
 <script src="/js/jquery.js"></script>
+<script>
+  $("#scroll-explore").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#explore").offset().top
+    }, 2000);
+  });
+</script>
+<script>
+  $("#scroll-top").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#top").offset().top
+    }, 2000);
+  });
+</script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/easing.js"></script>
 <script src="/js/nicescroll.js"></script>
