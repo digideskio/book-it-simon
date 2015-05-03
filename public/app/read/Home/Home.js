@@ -23,7 +23,7 @@
 
             $('#datepick-end')[0].attributes['placeholder'].value =_getDateString(item.end);
 
-            $('#arrCity')[0].attributes['value'] = item.location;
+            $('#arrCity')[0].value = item.location;
 
             $('#content-main .input-daterange').datepicker({
                 orientation: "top",
