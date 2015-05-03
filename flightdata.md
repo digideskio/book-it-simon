@@ -4,12 +4,12 @@ Required Fields
 All of the fields are of type strings
 ```
 Field name                          Example
-departureFlight.origin			  DCA
+departureFlight.origin			  	DCA
 departureFlight.destination 	    SEA
 departureFlight.date			    2015-05-08
-returnFlight.origin			     SEA
+returnFlight.origin			     	SEA
 returnFlight.destination		    DCA
-returnFlight.date			       2015-05-21
+returnFlight.date			 		2015-05-21
 ```
 
 
