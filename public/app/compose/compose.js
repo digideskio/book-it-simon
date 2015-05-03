@@ -6,11 +6,12 @@
     // The initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
         $(document).ready(function () {
-            app.initialize();
+            $('#depDate')[0].click(getStartDate);
+            // app.initialize();
 
-            $('#set-subject').click(setSubject);
-            $('#get-subject').click(getSubject);
-            $('#add-to-recipients').click(addToRecipients);
+            // $('#set-subject').click(setSubject);
+            // $('#get-subject').click(getSubject);
+            // $('#add-to-recipients').click(addToRecipients);
         });
     };
 
@@ -21,6 +22,13 @@
     function getSubject() {
         Office.cast.item.toItemCompose(Office.context.mailbox.item).subject.getAsync(function (result) {
             app.showNotification('The current subject is', result.value)
+        });
+    }
+
+    function getStartDate() {
+        Office.cast.item.toItemCompose(Office.context.mailbox.item).start.getAsync(function (result) {
+            // app.showNotification('The current subject is', result.value)
+            $('#depDate')[0].value = Office.cast.item.toItemCompose(Office.context.mailbox.item).start;
         });
     }
 
