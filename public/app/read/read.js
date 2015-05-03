@@ -39,8 +39,8 @@
     }
 
     var _getDateString = function (date) {
-        return ""+(date.getMonth()+1).toString()
-            +'/'+date.getDate().toString()
-            +'/'+date.getFullYear().toString();
+        return ""+date.getFullYear().toString()
+            +'-'+(date.getMonth()+1).toString()
+            +'-'+date.getDate().toString();
     }
 })();
