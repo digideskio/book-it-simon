@@ -1,0 +1,2093 @@
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<!-- This page, including but not limited to the Images, HTML and Javascript code contained herein are
+	Copyright (C) 1999 - 2015 Concur  All Rights Reserved. -->
+<!-- page class: "", template: "gateway.html" -->
+
+	<title>Itinerary Details</title>
+	
+
+	
+	
+		  
+
+			<script async="" src="https://www.concursolutions.com/jscache/appdynamics/adrum-ext.e39ae1f2afb7bb0faad24cf476d8250e.js?cachekilla=F"></script><script>
+				window[ "adrum-start-time" ] = (new Date).getTime();
+				window[ "adrum-app-key" ] = "AD-AAB-AAA-FUF";
+				window[ "adrum-ext-path" ] = "/jscache/appdynamics/adrum-ext.e39ae1f2afb7bb0faad24cf476d8250e.js?cachekilla=F";
+			</script>
+			<script src="https://www.concursolutions.com/jscache/appdynamics/custom/adrum.js?cachekilla=F"></script>
+
+
+
+	<link href="https://www.concursolutions.com/expense/common/css/styles_cte.css?cachekilla=6765941C5E6E831ED8E265D81EAD7489FBB3EE0FAZ" type="text/css" rel="stylesheet">
+<link href="https://www.concursolutions.com/csscache/minified/888422aa1755579b4c4a1323c1ac93c2f9953f1b_84c6103f724b40db6e545b610dfd73a1fac1ac59az.css?fn=/static/less/cnqr-legacy/master/manifest-travel-wiz.less&amp;cachekilla=84C6103F724B40DB6E545B610DFD73A1FAC1AC59AZ" type="text/css" rel="stylesheet">
+<link href="https://www.concursolutions.com/csscache/minified/6f45eaf9d0052e77887ac2c990cb4a1f5d3c79d7_84c6103f724b40db6e545b610dfd73a1fac1ac59az.css?fn=/static/less/cnqr-bootstrap-3.3.1/master/manifest-bootstrap.less&amp;cachekilla=84C6103F724B40DB6E545B610DFD73A1FAC1AC59AZ" type="text/css" rel="stylesheet">
+<link href="https://www.concursolutions.com/csscache/minified/6cb51f0ffaf4242e09661f87ba07e5aa5b999b8d_84c6103f724b40db6e545b610dfd73a1fac1ac59az.css?fn=/static/less/cnqr/master/manifest-cnqr-11.less&amp;cachekilla=84C6103F724B40DB6E545B610DFD73A1FAC1AC59AZ" type="text/css" rel="stylesheet">
+<link href="https://www.concursolutions.com/csscache/minified/1c538f62e5f7197051b09ff2b3b197eedd154a5a_84c6103f724b40db6e545b610dfd73a1fac1ac59az.css?fn=/static/less/cnqr-legacy/master/manifest-asp-11.less&amp;cachekilla=84C6103F724B40DB6E545B610DFD73A1FAC1AC59AZ" type="text/css" rel="stylesheet">
+<link href="https://www.concursolutions.com/csscache/minified/714d8ab81074cd146b05c247c1d6a7c73b0a542f_84c6103f724b40db6e545b610dfd73a1fac1ac59az.css?fn=/static/less/cnqr-legacy/master/manifest-non-extjs-11.less&amp;cachekilla=84C6103F724B40DB6E545B610DFD73A1FAC1AC59AZ" type="text/css" rel="stylesheet">
+
+	
+<script type="text/javascript">
+
+	if (!window.CNQR) {window.CNQR = {}}
+	var pageStartTime = new Date();
+	var userDatePreference = 0;
+	var userMilitaryTime = 0;
+	var userTimePreference = 0;
+	var userNumberPreference = 0;
+	var negativeNumberFormat = 0;
+	var negativeCurrencyFormat = 0;
+	var currencySymbolLocation = 0;
+	var defaultEmpCurrencyCode = 'USD';
+	var userWeekDayStartPreference = 1;
+	var sessionLockTime = 0;
+	var sessionLogoutTime = 7200;
+
+
+	var OT_DateFormat_MDY_slash = 0;
+	var OT_DateFormat_MDY_dot = 1;
+	var OT_DateFormat_MDY_hyphen = 2;
+	var OT_DateFormat_DMY_slash = 3;
+	var OT_DateFormat_DMY_dot = 4;
+	var OT_DateFormat_DMY_hyphen = 5;
+	var OT_DateFormat_YMD_slash = 6;
+	var OT_DateFormat_YMD_dot = 7;
+	var OT_DateFormat_YMD_hyphen = 8;
+
+	var otUseStrict = true;
+	var otCacheKilla = 'A07076085C35944E5CB9196B24CD79D8D03C19A3AZ';
+	var disableCookies = 0;
+	CNQR.IsGovtSite = ('False' == 'True');
+	CNQR.isOldIE = false;
+	CNQR.IPMForOldIEDisabled = false;
+	CNQR.disableMetrics = false;
+
+	CNQR.cgeUIVersion = '0';
+	CNQR.ConcurAccessible = ('False' == 'True');
+	CNQR.ProdStatus = 'prod';
+	CNQR.noConflict = ('' == 'True');
+	if (!CNQR.config) {CNQR.config = {}}
+	CNQR.config.localizationMode = false;
+	CNQR.IsGateway = true;
+	CNQR.Environment = "ASP";
+	CNQR.companyName = "Concur";
+	CNQR.analyticsId = '0C43734ADE7553AA4E95CE45C33C03C92F17B287C340B3F100C3FAAAACC1F007'; 
+	CNQR.gatewayPreviewDaysRemaining = 0;
+	CNQR.disableJSLogger = ('False' == 'True');
+
+	
+
+	CNQR.automationMode = 0;
+	CNQR.brandingId = 11;
+	CNQR.ipmEnabled = ('True' == 'True');
+	//ipmOverlaysPermitted determines whether we can show ipm popups/tooltips - it will be set to false later if a non-ipm popup is displayed (e.g. gateway tourtip or tripitpro sign-up)
+	CNQR.ipmOverlaysPermitted = ('True' == 'True');
+	CNQR.gUseLocationService = false;
+
+</script>
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/usermessage.js?cachekilla=60314336466B69789123CC062D89F82BA7BE5B1DAZ"></script>
+<script type="text/javascript" src="https://www.concursolutions.com/i18n/08C00537D197C4856868946A665248C83CB330D0_en-us.js?lang=en%2Dus&amp;cat=common%2Csmalljs%2Ctripfuncsjs&amp;msk=08C00537D197C4856868946A665248C83CB330D0" charset="UTF-8"></script>
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/minified/DC90B7630B00FA9776263F279313287A43C3D1EE_A07076085C35944E5CB9196B24CD79D8D03C19A3AZ.js?jslist=/j/functions.js&amp;cachekilla=A07076085C35944E5CB9196B24CD79D8D03C19A3"></script>
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/prototype1_6/prototype.cnqr.1.6.1.min.js?cachekilla=F"></script>
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/prototype1_6/html5data.js?cachekilla=F"></script>
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/minified/2B90F8E7AAC8EC5BD7BA3FA4003AF0F28B419D8A_A07076085C35944E5CB9196B24CD79D8D03C19A3AZ.js?jslist=/j/popupdiv.js,/j/tripfuncs.js,/j/autocomplete.js&amp;cachekilla=A07076085C35944E5CB9196B24CD79D8D03C19A3"></script>
+
+	<script type="text/javascript">
+		otLogFrame();
+	</script>
+
+	
+<script async="" src="https://www.concursolutions.com//www.googletagmanager.com/gtm.js?id=GTM-MLDWNT&amp;l=_routingDataLayer"></script><script async="" src="https://www.concursolutions.com//www.googletagmanager.com/gtm.js?id=GTM-MSV2ZK&amp;l=_frameworkDataLayer"></script><script async="" src="https://www.concursolutions.com//www.googletagmanager.com/gtm.js?id=GTM-WGMG5K&amp;l=_siteDataLayer"></script><script type="text/javascript" async="" src="https://www.concursolutions.com//www.google-analytics.com/analytics.js"></script></head>
+
+<body lang="en-us" class="cnqr cnqr-theme-11" id="cnqrBody">
+
+
+
+
+			<script>
+			(function (cnqr) {
+							
+						cnqr.permissions = {
+							Administration: {"IsSysAdmin":false,"IsCompanyAdmin":false,"IsBillingAdmin":false,"IsTechSupportAdmin":false,"IsLocalizationAdmin":false,"IsLocalizationUser":false,"IsModuleManager":false,"IsWebServicesAdmin":false,"IsAppCenterAdmin":false,"IsMultiDataCenterAdmin":false,"IsTravelPointsAdmin":false,"IsSetupWizardAdmin":false,"IsSimplifiedBillingAdmin":false,"IsSimplifiedPaymentManager":false,"IsStandardTravelAdmin":false,"IsBudgetAdmin":false,"IsChangeLogAdmin":false,"IsHmcLoggedAdmin":false,"IsStandardPreImplementationAdmin":false,"IsBreezeSubscribeAdmin":false,"IsConcurSettingsAdmin":false,"IsCaptureSettingsAdmin":false,"IsUserExperienceSettingsAdmin":false,"IsToolsAdmin":false},
+								Areas: {"HasHome":true,"HasTravel":true,"HasExpense":true,"HasInvoice":true,"HasTravelRequest":false,"HasPurchaseRequest":false,"HasAuthRequest":false,"HasSupplierPortal":false,"HasApprove":false,"HasConnect":true,"HasReporting":false,"HasAppcenter":true,"HasAdmin":false,"HasAudit":false,"HasProfile":true,"HasTestDrive":false},
+								AuthRequest: {"IsRequestUser":false,"IsRequestCreator":false,"IsRequestApprover":false,"IsProcessor":false},
+								Expense: {"IsReportUser":true,"IsReportCreator":true,"IsReportApprover":false,"IsReportSubmitter":true,"IsAdmin":false,"IsReceiptUser":true,"IsCardUser":false,"IsCasUser":false,"IsCashAdvanceUser":false,"IsCashAdvanceCreator":false,"IsCashAdvanceApprover":false,"IsCashAdvanceSubmitter":true,"IsReceiptsProcessor":false,"IsProcessor":false,"IsBudgetDashboardUser":false,"IsCentralReconUser":false,"IsTripImportUser":true,"IsOneClickUser":true,"IsOneClickPrepurchaseAirUser":true,"IsPersonalCardSyncAllowed":false},
+								Invoice: {"IsInvoiceUser":true,"IsInvoiceCreator":true,"IsPurchasingUser":false,"IsInvoiceApprover":false,"IsInvoiceAssigner":false,"IsProcessor":false,"IsVendorManager":false,"IsInvoiceRemover":false,"IsPaymentManager":false,"IsImageProcessor":false,"IsEmailProcessor":false,"IsAdmin":false},
+								LocateAndAlert: {"IsUser":true,"IsAdmin":false},
+								Meeting: {"IsMeetingCenterUser":true,"IsMeetingOnlyUser":false,"IsMeetingCenterAdmin":false,"IsMeetingCenterPlanner":false},
+								Profile: {"IsPersonalInformationEditor":true,"IsPasswordChanger":true,"IsSystemSettingsEditor":true,"IsMobileRegistrationUser":true,"IsMobileDeviceManager":true,"IsVacationReassigner":true,"IsCombinedProfileUser":false},
+								PurchaseRequest: {"IsRequestUser":false,"IsRequestCreator":false,"IsRequestApprover":false,"IsRequestProcessor":false,"IsOrderProcessor":false},
+								Reporting: {"IsCliqookReportingUser":false,"IsReportNetUser":false,"IsSamlReportNetUser":false,"IsSimplifiedReportingUser":false,"IsAdmin":false},
+								SupplierPortal: {"IsPortalUser":false,"IsPortalAdmin":false},
+								TravelManager: {"IsAdmin":false,"IsApprover":false,"IsUser":false},
+								Travel: {"IsOpenBookingUser":true,"IsTripListUser":true,"IsTravelUser":true,"IsTravelPointsUser":true,"IsTravelSystemAdmin":false,"IsTravelAgent":false,"IsResellerAdmin":false,"IsTravelAgentAdmin":false,"IsOpenAgentUser":false,"IsTripApprover":false,"IsGuestBookingUser":true,"IsAdmin":false},
+								TravelRequest: {"IsRequestUser":false,"IsRequestCreator":false,"IsEventRequestCreator":false,"IsRequestApprover":false,"IsBudgetDashboardUser":false,"IsProcessor":false,"IsAdmin":false}
+								};
+							
+				})((function(window){
+					if (window.jQuery &amp;&amp; !window.Prototype) {
+						return window.jQuery.cnqr;
+					} else if (window.CNQR){
+						return window.CNQR;
+					}	
+					return {};
+				})(window));
+			</script>
+				<!-- Google Tag Manager V2 -->
+				<script type="text/javascript">
+					// GTM Base Tag
+					function _loadGTMContainer(dataLayerVar, id) {
+						window[dataLayerVar] = window[dataLayerVar] || [];
+						window[dataLayerVar].push({
+				 			"gtm.start": new Date().getTime(),
+				 			event: "gtm.js"
+						});
+
+						var gtmScript = document.createElement("script");
+						gtmScript.async = true;
+						gtmScript.src = "//www.googletagmanager.com/gtm.js?id=" + id + "&amp;l=" + dataLayerVar;
+						document.getElementsByTagName("head")[0].appendChild(gtmScript);
+					}
+					if (!window._routingDataLayer) { _loadGTMContainer("_routingDataLayer", "GTM-MLDWNT"); }
+				</script>
+				<!-- Google Tag Manager V2 -->	
+
+<div tabindex="-1" style="position:absolute; visibility:hidden;z-index:1;" aria-live="assertive" aria-haspopup="true" id="overDiv"></div>
+
+	<!-- Begin Header -->
+<div class="container cnqr-app-header">
+		
+	</div>
+	<!-- End Header -->
+<!-- End Header notifications -->
+
+<form method="Post" action="" id="frmMain" name="frmMain" class="nomargins">
+	
+	<!--<otdrawbannerxx/>-->
+
+	
+
+	<div id="cnqr-app-content" class="container cnqr-app-content">
+		<div class="row">
+			
+			
+				<div class="col-md-12">
+					<h1 class="">Itinerary Details</h1>
+					<!-- Begin Body -->
+
+		<div id="dynamicContent">
+			
+
+
+
+ 
+
+<style type="text/css">
+	.onlyForPrint {
+		display: none;
+	}
+
+	.itinerary {
+		max-width: 800px;
+	}
+	
+	.itinerary label {cursor:auto;}
+	
+	.itinerary a:link{
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		color: #006ede; /* GOV-7343: Darkened from #3399FF to #006ede for 508 color contrast compliance. */
+		font-size: 12px;
+		text-decoration:underline;
+	}
+
+	.itin_title_table td {border:0px;vertical-align:top;}
+	.itin_title_table span.txtLabel, .itin_title_table label {padding-right:6px;}
+	.segLinksOpenBook span.txtLabel, th span.txtLabel { font-weight: bold; }
+	.itin_title_table .editor_field {width:250px;}
+	.itin_title_table div {padding-left:10px;padding-bottom: 4px;}
+
+
+	.blurbText {
+		background:#FFFF99 url('/Images/themes/BlueFrog/Ext3/window/icon-warning.gif') 16px 16px no-repeat;
+		color: #696969;
+		border:1px #BFBFBF solid;
+		font: normal normal normal 11px Segoe,Helvetica,Arial,Sans Serif;
+		margin: 4px 5px 4px 5px;
+		padding:18px 10px 10px 58px !important; 
+		/* SET min height all browsers */
+			min-height:33px;
+			height:auto !important;
+			height:33px; 
+	}
+
+	.blurbText  td {
+		color:#696969;
+		padding:0 4px 4px 0;
+	}
+
+	.blurbText  a {
+		 color:#696969;
+	}
+
+	.blurbText div {
+		padding:0px !important; 
+		margin-bottom:5px;
+	}
+
+	.blurbText div.messageForPrint {
+		padding-right:16px !important;
+		background:transparent url('/images/icons/common/print16.gif') right 0 no-repeat;
+		/* SET min height all browsers */
+			min-height:20px;
+			height:auto !important;
+			height:20px; 
+	}
+		
+	.segprehead 
+	{
+		margin-right: 30px;
+		font-weight: bold;
+	}
+
+	tr.np  td
+	{
+		padding: 0;	
+	}
+
+	#ccardsec {
+		margin: 10px 0 10px 20px;
+	}
+
+	#ggfo_gen div {
+		padding-left: 0;
+	}
+
+	#TripItLink {padding: 4px 0px;}
+	#general_info {
+		/*line-height:15px;*/ /* commented out by acsontos sept 28. This causes problems with some fonts and is messing up emails */
+		padding:4px;
+	}
+	
+	.titledetailsouter 
+	{
+		background-color:#F6F6F7;
+		border:solid 1px #D6E3F4;
+		margin-bottom:10px;
+		overflow:hidden;
+	}
+	.titledetailstext
+	{
+		background-color:#305DB6;
+		background:#305DB6;
+		color:white; 
+		height:25px;
+		background-image:url('/images/ItineraryUI/tripTitleV2.png');
+		background-repeat:repeat-x;
+		background-image: linear-gradient(bottom, #305DB6 26%, #R2ACFA 63%);
+		background-image: -o-linear-gradient(bottom, #305DB6 26%, #R2ACFA 63%);
+		background-image: -moz-linear-gradient(bottom, #305DB6 26%, #R2ACFA 63%);
+		background-image: -webkit-linear-gradient(bottom, #305DB6 26%, #R2ACFA 63%);
+		background-image: -ms-linear-gradient(bottom, #305DB6 26%, #R2ACFA 63%);
+		background-image: -webkit-gradient(	linear,	left bottom, left top, color-stop(0.26, #305DB6), color-stop(0.63, #R2ACFA));
+	}
+
+	.titledetailstext h2
+	{
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		font-weight:bold; 
+		font-size: 14px; 
+		text-align: left;
+		padding: 4px 15px 3px 15px;
+		margin:0px;
+		color: #ffffff;
+	}
+
+	
+	.segdetailsdate
+	{
+		background-color:#74ADFA;
+		background:#74ADFA;
+		color:white; 
+		height: 25px;
+		background-image:url('/images/ItineraryUI/segDateGradientV2.png');
+		background-repeat:repeat-x;
+		background-image: linear-gradient(bottom, #74ADFA 26%, #B7D6FE 63%);
+		background-image: -o-linear-gradient(bottom, #74ADFA 26%, #B7D6FE 63%);
+		background-image: -moz-linear-gradient(bottom, #74ADFA 26%, #B7D6FE 63%);
+		background-image: -webkit-linear-gradient(bottom, #74ADFA 26%, #B7D6FE 63%);
+		background-image: -ms-linear-gradient(bottom, #74ADFA 26%, #B7D6FE 63%);
+		background-image: -webkit-gradient(	linear,	left bottom, left top, color-stop(0.26, #74ADFA), color-stop(0.63, #B7D6FE));
+	}
+
+	#tripTitle{
+		font-weight: bold;
+	}
+
+	#tripTitle:hover {
+		text-shadow:-1px -1px 0 #CCC, 1px -1px 0 #CCC, -1px 1px 0 #CCC, 1px 1px 0 #CCC;
+	}
+
+	#tripit_logo {
+		float: right;
+	}
+	.detailLabel {
+		font-weight: bold;
+		cursor:auto!Important;
+		
+		
+/*	    color: #3784DF; */
+	}
+	
+	
+	.segDetailTitle 
+	{
+		padding:0;
+		margin:0;
+		font: bold 1.5em Segoe, Helvetica, Arial, Sans Serif;
+		text-align: left;
+		color: #000000;
+	}
+
+	.airseg .segDetailTitle
+	{
+		font-weight: normal;
+	}
+
+	.segDetailSubTitle
+	{
+		padding:0;
+		margin:15px 0 0;
+		font: bold 14px Segoe, Helvetica, Arial, Sans Serif;
+		text-align: left;
+		color: #000000;
+	}
+	
+	.segDetailSubTitle div
+	{
+		font: normal 11px Segoe, Helvetica, Arial, Sans Serif;
+	}
+
+	.segDetailSubTitle img {
+		margin-left: 5px;
+		vertical-align: text-bottom;
+	}
+
+	.segSubTitleSub {
+		font: italic 11px Segoe, Helvetica, Arial, Sans Serif;
+	}
+
+	.segDetailConnectTitle
+	{
+		font-size: 11px; 
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		text-align: left;
+		color: #000000;
+		font-weight: bold;
+		padding: 5px 0px 5px 0px; 
+		margin:0px;
+	}
+
+	.airDetailItinTitle {
+		color: #000;
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		font-size: 14px;
+	}
+
+	 div.sgConnectionTitleDiv {
+		background-color:#DFDFDF;
+		margin: 0 15px 15px -15px;
+		padding-left:15px;
+		height: 25px;
+		font: italic 12px/25px Segoe, Helvetica, Arial, Sans Serif;
+		vertical-align: middle;
+	 }
+
+	.segdetailsouter 
+	{	
+		background-color:#F6F6F7;
+		border:solid 1px #D6E3F4; 
+		margin-bottom:10px;
+	}
+	.segdetailsdate h3 
+	{
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		font-weight:bold; 
+		font-size:14px; 
+		text-align: left;
+		padding: 4px 15px 3px 15px;
+		margin: 0px;
+		color: #ffffff;
+	}
+	.segleftdate {margin-top:3px;color:#BFBFBF;font-weight:bold;line-height:1em;}
+	.segdiv {background-color:#FFF;padding:10px;}
+	.segtitle {font-size:10pt;color:black;margin-bottom:5px;font-weight:bold;}
+	.segtitle IMG {vertical-align:middle;}
+	.segtable {width:580px;margin-left:15px;padding:0;margin:0;border-collapse:collapse;margin-bottom:5px;}
+	.segtable .segleft {
+		min-width: 80px;
+		border-right: solid 1px #BFBFBF;
+		padding-left: 0px;
+		width: 80px!important;
+	}
+	
+	
+	.segleft table td {padding-left:0;}
+	.dayspacer {background-color:#E8F3FE;height:2px}
+	.itinerary td {vertical-align:top;}
+	.segtable td { 
+		padding-left: 8px;
+		width: 250px!important;
+	}
+	.addsegimglink {text-decoration:none;}
+	.addsegimglink img {vertical-align:middle;}
+	/*.segtable td {border:solid 1px red;}*/
+	.small-black {COLOR: black;}
+	
+	.itinEditable {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	.itinSelectEditable {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	.itinSegmentEditable {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	.itinSegmentEditable2 {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	.highlight {
+		background-color: Yellow;
+	}
+	
+	#tripDesc { line-height: 16px; }
+	
+	.itinerary button {
+		padding: 0;
+		font-size: 9px;
+		vertical-align: absmiddle;
+	}
+	.addsegment A img {border:0px;}
+	
+	/* Air Segments */
+	.flightTitle
+	{
+		vertical-align: middle;
+	}
+	.flightTitle em
+	{
+		color: Gray;
+	}
+	.flightConfirmation
+	{
+		color: Gray;
+		font-weight: bold;
+	}
+	.flightInfo {
+		color: Black;
+		font-weight: bold;
+	}
+	.flightData {
+		width: 33%;
+	}
+	.itinerary .flightData em {
+		color: black;
+		font-weight: normal;
+	}
+	
+    .itinmessage 
+	{
+		font-family: Arial, helvetica, Sans-Serif;
+		border:1px solid #BFBFBF;
+		color: 	#3D55AB;
+		font-weight: 700;
+		background-color:#F5F5F5;
+		padding:5px;
+		margin:5px 2px 5px 0px;
+	}
+
+	.itinmessage_gov
+	{
+		font-family: Arial, helvetica, Sans-Serif;
+		border:1px solid #BFBFBF;
+		color: 	#df0000;
+		font-weight: bold;
+		background-color:#F5F5F5;
+		padding:5px;
+		margin:5px 2px 5px 0px;
+	}
+	
+	.HK_SegmentStatus {color:#228B22;font-weight:700;} /* forestgreen = #228B22 */
+	.HL_SegmentStatus {color:#df0000;font-weight:700;}
+	.BK_SegmentStatus, .nongds {color:#8F6909;font-weight:700;}   /* GAT-2062: Darkened yellow from named "darkgoldenrod" for 508 compliance. */
+	.YK_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.GK_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.MK_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.PA_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.XX_SegmentStatus {color:#df0000;font-weight:700;}
+
+
+	.HX_SegmentStatus {color:#df0000;font-weight:700;}
+	.PassiveStatusMsg_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.Default_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+	.AltSourceMsg_SegmentStatus {color:#8F6909;font-weight:700;} /* GAT-2062: Darkened yellow from #B8860B (aka "darkgoldenrod") for 508 compliance. */
+
+	/* Parking Segments */
+
+
+	.parking_vendor_logo {
+		float:left;
+		padding-right:4px;	
+	}
+
+
+	/* Segment Links */
+	.seglnksDiv {
+		background-color:#DFEAFB;
+		border: none;
+		vertical-align: middle;
+	}
+	
+	.AddText a:link {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 36px;
+	}
+
+	.AddText {
+		padding: 0;
+	}
+
+	table.seglnks  {
+		border:none;
+		margin-bottom: 15px;
+	}
+
+	div.seglnk {
+		float: left;
+		margin-left: 15px;
+		margin-bottom:5px;
+	}
+
+	div.segaddlnk {
+		margin: 0;
+		text-align: center;
+	}
+
+	/* quirks-mode hack */
+	* html div.seglnk { width /**/: 55px;  } 
+
+	div.gogoseglnk {
+		display:none;
+	}
+
+	.seglnks th {
+		vertical-align:middle;
+	}
+	.seglnks td {
+		vertical-align:middle;
+	}
+
+	.sglnksall {
+		display:none;
+	}
+
+	.gogoFormV2 {
+		display: none;
+	}
+
+	.ggv2div {
+		margin: 15px;
+		border-top: 1px solid #BFBFBF;
+		padding-top: 15px;
+	}
+
+	.sglnksob {
+		display: none;
+		border-left: 1px solid #BFBFBF;
+		width: 230px;
+	}
+
+	.seglnks img {
+		border: none;
+		vertical-align:middle;
+	}
+	
+	.cancel_link td {
+		width:auto!important;
+		padding:0;
+	}
+	.cancel_link a {
+		padding-right: 2px;
+		font-size: 8pt;
+		line-height:13px;
+		vertical-align: inherit;
+		text-decoration: none;
+	}
+	.cancel_link img {
+		margin-right: 2px;
+	}
+	.minorLabel {
+		color: Black;
+	}
+
+ .dbr {
+	background-color:White;
+	margin-bottom:20px;
+ }
+ 
+ .seg {
+	/*margin-top:10px;	*/
+	/*background-image:url('/images/trav/grdSg.jpg'); 
+	background-repeat:repeat-x;*/
+}
+ 
+ div.sgTitle {
+	color: #303030;
+	font-weight:bold;
+	margin-bottom:5px;
+	margin-top:15px;
+ }
+ div.sgTitleAir {
+	color: #303030;
+	margin-bottom:5px;
+	margin-top:15px;
+ } 
+ .sgTitle TD {
+	font-weight: bold;
+	font-size: 10pt;
+ }
+ 
+ div.valInd {
+	padding-left:70px;
+ }
+ 
+ div.sgDetail {
+	padding: 15px 15px 15px 15px;
+	vertical-align:middle!important;
+	
+ }
+ div.compressed {
+	vertical-align:middle!important;
+	text-decoration:underline;
+ }
+ 
+ .sgDetail TH, .sgDetail TH LABEL {
+	font-size: 11px;
+ }
+ 
+ .sgDetail th em {
+	font-size: 10pt;
+	padding-right:4px;
+ }
+ 
+ 
+ div.sgDetail img {
+	vertical-align:middle;
+	border:none;
+ }
+ 
+
+ .timeline {
+	width: 36px;
+	padding: 0px 15px 0px 15px; /*top right, bottom, left*/
+	box-sizing: content-box;
+	background-image: url('/images/ItineraryUI/timeline_dot.gif');
+	background-position: center center;
+	background-repeat: repeat-y;
+	background-color: inherit;
+	background-size: 3px 100%;
+	border:0;
+
+	text-align:center;
+	overflow:display;
+	text-overflow:display;
+ }
+
+.timeline div {
+	width: 36px;
+	background-image: url('/images/ItineraryUI/timeline_dot.gif');
+	background-position: center center;
+	background-repeat: repeat-y;
+ }
+
+ .timeline div {
+	height: 15px;
+	background-color: #f6f6f7;
+ }
+
+ .flight .timeline,  .flight .timeline div{
+	background-image: url('/images/ItineraryUI/timeline_flight.gif');
+}
+
+ .car .timeline,  .car .timeline div{
+	 background-image: url('/images/ItineraryUI/timeline_car.gif');
+}
+
+ .hotel .timeline,  .hotel .timeline div{
+	 background-image: url('/images/ItineraryUI/timeline_hotel.gif');
+}
+
+ .rail .timeline,  .rail .timeline div{
+	 background-image: url('/images/ItineraryUI/timeline_rail.gif');
+}
+
+ .taxi .timeline,  .taxi .timeline div{
+	 background-image: url('/images/ItineraryUI/timeline_taxi.gif');
+}
+
+ .parking .timeline,  .parking .timeline div{
+	 background-image: url('/images/ItineraryUI/timeline_parking.gif');
+}
+
+ .seglnks .timeline,  .seglnks .timeline div{
+	 /*background-image: url('/images/ItineraryUI/timeline_links.gif');*/
+	 background:none;
+}
+
+.timeline.first div {
+	background-image:none;
+ }
+
+ .timeline.last {
+	background-image:none;
+ }
+
+ .sgTypeName {
+	background-color:#76B1F8;
+	background:#76B1F8;
+	color:white; 
+	background-image:url('/images/ItineraryUI/segTypeGradient.png');
+	background-repeat:repeat-x;
+	background-image: linear-gradient(bottom, #76B1F8 26%, #B5D6FD 63%);
+	background-image: -o-linear-gradient(bottom, #76B1F8 26%, #B5D6FD 63%);
+	background-image: -moz-linear-gradient(bottom, #76B1F8 26%, #B5D6FD 63%);
+	background-image: -webkit-linear-gradient(bottom, #76B1F8 26%, #B5D6FD 63%);
+	background-image: -ms-linear-gradient(bottom, #76B1F8 26%, #B5D6FD 63%);
+	background-image: -webkit-gradient(	linear,	left bottom, left top, color-stop(0.26, #76B1F8), color-stop(0.63, #B5D6FD));
+ }
+ 
+ .sgTypeName h2 {
+	font-weight:bold;
+	font-size:11pt;
+	padding:3px 0 3px 8px;
+	margin:0px;
+ }
+ 
+ .seg_section_title label {
+	color: #000000;
+	font-size:11px;
+	font-weight:bold;
+ }
+ .sgDetail table {
+	border-collapse:collapse;
+ }
+ .sgDetail th {
+	vertical-align:bottom;
+	text-align:left;
+	padding:4px;
+	font-weight:normal;
+	padding-top:10px;
+ }
+
+  th.seg_section_title  {
+	padding-top:15px!important;
+	color: #000000;
+	font-size:11px;
+	font-weight:bold;
+ }
+
+div.segConnectionImgDiv {
+	background-color:#DFDFDF;
+	width:36px;
+	height:25px;
+}
+
+ .lth {
+	font-weight:bold!important;
+	padding-top:10px;
+	border-bottom:solid 1px #BFBFBF;
+ } 
+ 
+ .sgDetail td {
+	vertical-align:top;
+	text-align:left;
+	border-bottom:none;
+	padding:2px 4px 2px 4px;
+	font-weight:normal;
+	font-family: Segoe,Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	color: #000000;
+ }
+ 
+ 
+ 
+ .sgDetail .changeLink {
+	vertical-align:top;
+	text-align:left;
+	border-bottom:none;
+	padding:8px 0px 0px 2px;
+	font-weight:normal;
+ }
+
+
+  .sgDetail .changeLink UL {
+	padding-left: 18px;
+	margin:0px;
+  }
+
+
+
+ .sgDetail label {
+	color:#000000;
+	padding-right:4px;
+	font-family: Segoe,Helvetica,Arial,sans-serif;
+	font-size: 11px;
+ }
+ 
+ .sgDetail .hl {
+	color: #00137F;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+ }
+
+ div.OpenBookingHelpfulMessage 
+ {
+	margin:8px 20px 8px 8px;
+ } 
+
+ div.waitlist
+ {
+	margin:10px;
+	border-bottom: none; 
+	font-size:8pt;
+ }
+ div.waitlist div 
+ {
+	font-weight:bold;
+	padding:4px;
+	color: #00137F;
+	text-align:center;
+ }
+ 
+ .waitlist table 
+ {
+	width:100%;
+	border-collapse:collapse;
+ }
+
+ .waitlist caption 
+ {
+	color:#00137F;
+	padding: 2px 0px 2px 8px;
+	text-align:left;
+	font-weight:bold;
+	/*background-color:#EFF6FF;*/
+	border-bottom: solid 1px #BFBFBF;
+ }
+ 
+ .waitlist thead 
+ {
+	color:#3F3F3F;
+	font-weight:bold;
+	background-color:#EFEFEF;
+	
+ }
+ 
+ .waitlist tbody th 
+ {
+	white-space:nowrap;
+	vertical-align:top;
+ }
+ 
+ .waitlist tbody th a
+ {
+	font-weight: normal;
+ }
+ 
+ 
+ .waitlist tr 
+ {
+	border-bottom: solid 1px #BFBFBF;
+ }
+ 
+ .waitlist thead 
+ {
+	vertical-align:middle;
+ }
+ .waitlist img 
+ {
+	border:none;
+	vertical-align:middle;
+ }
+
+	.PanamaEditLink
+	{
+		text-align:left;
+		padding-left:7px;
+		font-family:arial;
+		font-size:9pt;
+	}
+
+/*Multipax Section */	
+	.detailBlackLabel {
+		cursor:auto!Important;
+		color:#3F3F3F;
+	}
+
+	.inlineMessage {
+		background-color:#f2f8f3;
+		background:#f2f8f3;
+		height:28px;
+		border: 1px solid #D8D8D8;
+		vertical-align:middle;
+		padding: 5px 5px;
+		margin: 0 15px 15px 0;
+	}
+
+	.inlineMessageText {
+		font-family: "Segoe UI", "Helvetica Neue", Arial, Tahoma, Helvetica, sans-serif; 
+		font-weight: bold;
+		font-size: 11px; 
+		line-height: 12px; 
+		color: #262626; 
+		padding: 5px 10px;
+	}
+	.inlineMessage a {
+		font-family: "Segoe UI", "Helvetica Neue", Arial ,Tahoma, Helvetica, sans-serif;
+		font-weight: normal; 
+		font-size: 11px; 
+		line-height: 12px; 
+		color: #47ac62;
+	}
+
+	.inlineMessage a:hover {
+		color: #347a44;
+	}
+	
+	.segTitleRow td {
+		border-top: solid 1px #BFBFBF;
+	}
+
+	.segLinksOpenBook {
+		float: right;
+		margin:left: 15px;
+		padding: 0 15px;
+		font-size: 11px;
+		white-space: normal;
+		min-height: 55px;
+		height:100%;
+		width: 200px;
+	}
+	.segLinksOpenBook label, .segSeats, .segSeats label {
+		font-weight: bold;
+	}
+
+	.segDivider {
+		border-top: 1px solid #BFBFBF;
+	}
+
+	#buttons2 input[type=button] {
+		display: none;
+	}
+</style>
+	
+<div class="itinerary">
+
+
+
+
+
+
+<style type="text/css">
+	.itineraryOverviewTable {
+		width: 100%;
+		padding: 15px 0px 15px 0px; /*top right, bottom, left*/
+		border: 0;
+		color: #000000;
+		background-color: #f6f6f7;
+	}
+
+	#itineraryOverviewCell1 {
+		width: 18%;
+		padding: 0px 0px 0px 15px; /*top right, bottom, left*/
+	}
+
+	#itineraryOverviewCell2 {
+		width: 50%;
+		padding: 0px 15px 0px 15px; /*top right, bottom, left*/
+	}
+
+	#itineraryOverviewCell3 {
+		width: 31%;
+		padding: 0px 15px 0px 15px; /*top right, bottom, left*/
+		border-left: solid 1px #BFBFBF;
+	}
+
+	#itineraryOverviewConfirmCell1 {
+		padding-right: 15px;
+	}
+
+	#tripConfirm { 
+		padding-left: 15px;
+		display: none;
+	}
+
+	#tripDone { 
+		padding-bottom: 8px;
+		display: none;
+	}
+
+	#itineraryOverviewCell1 UL {
+		margin: 0;
+		padding-left: 14px;
+	}
+
+	.itineraryOverviewTable .txtLabel, .itineraryOverviewTable label, LEGEND {
+		color: #000000;
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		font-size: 11px;
+		font-weight: bold;
+	}
+
+	.itineraryOverviewTable body, label, .txtLabel, textarea, input, select, optgroup, fieldset, legend {
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		font-size: 11px;
+		color: #000000;
+	}
+
+	.itineraryOverviewTable a:link {
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		color: #006ede; /* GOV-7343: Darkened from #3399FF to #006ede for 508 color contrast compliance. */
+		font-size: 11px;
+		text-decoration: underline;
+	}
+
+	#segLinkDiv {
+		padding-bottom: 4px;
+		padding-left: 10px;
+	}
+
+	#addToYourItinerary {
+		color: #000000;
+		font-family: Segoe,Helvetica,Arial,sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.seglnksTblGeneral {
+		padding: 0px;
+		margin: 10px 0px 10px 0px; /*top right, bottom, left*/
+	}
+
+		.seglnksTblGeneral td {
+			vertical-align: middle;
+		}
+
+		.seglnksTblGeneral img {
+			border: 0;
+		}
+
+	.seglnksColLeft {
+		padding: 0px 10px 5px 0px; /*top right, bottom, left*/
+	}
+
+	.seglnksColRight {
+		padding: 0px 0px 5px 0px; /*top right, bottom, left*/
+	}
+
+	.gogoOverview {
+		display: none;
+	}
+
+	#tripDescEditLink, #tripTitleEditLink {
+		font-family: Segoe, Helvetica, Arial, Sans Serif;
+		color: #006ede; /* GOV-7343: Darkened from #3399FF to #006ede for 508 color contrast compliance. */
+		font-size: 10px;
+		text-decoration: underline;
+	}
+
+	div.segActionLink {
+		margin-bottom: 5px;
+		margin-top: 15px;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	.itinFlyout {
+		display: none;
+		position: absolute;
+		width: auto;
+		background-color: #fff;
+		z-index: 900;
+		padding: 15px;
+		top: 35px;
+	}
+
+	.segLinkSelectSegment {
+		left: -100px;
+	}
+
+		.segLinkSelectSegment.itinFlyout select {
+			margin-top: 10px;
+		}
+
+	.itinFlyout .buttons {
+		margin-top: 10px;
+		float: right;
+		clear: left;
+		text-align: right;
+	}
+
+	.gogoFlyout {
+		top: 60px;
+		left: -107px;
+		text-align: left;
+	}
+
+	#gogoGeneral {
+		border-top: 1px solid #D6E3F4;
+	}
+
+		#gogoGeneral .ggv2div {
+			border-top-width: 0;
+			float: left;
+		}
+
+		#gogoGeneral .ggv2div img {
+			float:none;
+			margin:0;
+		}
+
+		#gogoGeneral img {
+			float: left;
+			margin: 15px;
+		}
+
+		#gogoGeneral .ggv2hide {
+			display: none;
+		}
+
+	.segLnkPosition .gogoFlyout {
+		top: 35px;
+		left: -100px;
+	}
+
+	.segLinkSelectSegment.triangle-border.top.right:after, .segLinkSelectSegment.triangle-border.top.right:before {
+		left: 110px;
+	}
+
+	.gogoFlyout.triangle-border.top.right:after, .gogoFlyout.triangle-border.top.right:before {
+		left: 110px;
+	}
+
+	.tripModified {
+		font-style: italic;
+	}
+</style>
+
+
+
+		<div class="titledetailsouter clearfix">
+			<div class="titledetailstext">
+				<h2>Trip Overview</h2>
+			</div>
+
+
+			<div class="itin_title_table" style="width: 100%;">
+			<table role="presentation" class="itineraryOverviewTable"><tbody><tr>
+
+					<td class="notForPrint" id="itineraryOverviewCell1">
+						<span class="detailLabel">I want to...</span>
+						<ul>
+							<li><a href="javascript:PrintItinerary();" role="button">Print Itinerary</a></li>
+							<li><a href="javascript:EmailItinerary()" role="button">E-mail Itinerary</a></li>
+									<li><a href="javascript:popupViewEReceipts();" role="button">View E-Receipts</a></li>
+										<li><a href="javascript:viewHistory()" role="button">View Trip History</a></li>
+									<li><a href="javascript:createTemplate()" role="button">Create Template</a></li>
+							
+						</ul>
+					</td>
+
+
+				<td id="itineraryOverviewConfirmCell1">
+
+
+				<div>
+					<span class="detailLabel">Trip Name:</span>
+					<span class="" onclick="javascript:changeInPlaceEditorLinkDislay('tripTitle', false)" id="tripTitle">Trip from New York to Seattle (May 8 - 21) 	</span>
+				</div>
+				<div>
+						<span class="detailLabel">Start Date:</span>
+						<span id="tripStartDate">May 8, 2015</span>
+				</div>
+				<div>
+						<span class="detailLabel">End Date:</span>
+						<span id="tripEndDate">May 21, 2015</span>
+				</div>
+
+				<div>
+					<span class="detailLabel">Created:</span>
+					<span id="tripCreatedDate"> May 3, 2015, Chris Ismael 					</span>
+				</div>
+		
+				<div>
+					<span class="detailLabel">Description:</span>
+					<span class="" onclick="javascript:changeInPlaceEditorLinkDislay('tripDesc', false)" id="tripDesc">(No Description Available)</span>
+				</div>
+						<div>
+							<span class="detailLabel">
+Agency Record Locator:							</span>
+							2RP7XP
+						</div>
+							<div style="padding-bottom: 4px;"><span class="detailLabel">Ticket Number(s):</span> 0277535356511</div>
+							<div>
+								<span class="detailLabel">Passengers:</span> Chris Ismael 	</div>
+<div><span class="detailLabel">Total Estimated Cost:</span><span></span> <span><span style="font-weight:normal">$</span><b>940.20</b> <span style="font-weight:normal"> USD</span></span></div>
+
+
+</td> 
+
+				</tr>
+			</tbody></table>
+			</div>   
+
+		</div>
+
+
+			<div class="segdetailsouter clearfix">						<div class="titledetailstext">
+							<h2>Reservations</h2>
+						</div>
+						<div class="segdetailsdate">
+								<h3>Friday, May 8, 2015</h3>
+						</div>
+			<div>
+			<table cellspacing="0" cellpadding="0" role="presentation" style="width:100%">
+				<tbody><tr>
+					<td>
+
+
+
+
+
+
+
+ <div data-brkey="worldspan$2RP7XP" id="A_11349522" class="seg airseg">
+ 
+<table cellspacing="0" cellpadding="0" border="0" role="presentation" class="flight" style="border-collapse:collapse; width:100%;">
+	
+		<tbody><tr><td data-type="A" class="timeline first" rowspan="99">
+			<div style="background-image: none;"></div>
+<img width="36" height="36" title="" src="https://www.concursolutions.com/static/images/ItineraryUI/Flight36.png" alt="">	</td></tr>
+
+	<tr>
+		<td style="padding-left:4px;padding-right:15px;">
+			<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse:collapse; width:100%;">
+				<tbody><tr style="vertical-align:middle">
+					<td>
+						<div class="sgTitle">
+							<h4 class="segDetailTitle"><span class="segprehead">Flight</span> <strong>New York, NY</strong> (JFK) to <strong>Seattle, WA</strong> (SEA)</h4>
+						</div>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="padding-left:4px;">
+			<div id="flightSegNum11349522" class="segDetailSubTitle">
+				Alaska Airlines&nbsp;1
+			</div>
+
+
+		</td>
+	</tr>
+	<tr><td>
+
+
+	<div class="sgDetail">
+		<table role="presentation" style="width:100%; border-collapse:collapse">
+			<colgroup><col width="43%"><col width="56%"></colgroup>
+
+
+
+			<tbody><tr>
+				<td>
+					<div>
+						<div class="segDetailSubTitle">Departure:  04:29 PM</div>
+						<div class="segSeats">
+<div><label>Seat:</label><span id="seatSelectionFlight_AS1_2015-03-02T08:00:00_2015-03-02T10:50:00_G">21B</span></div>
+						</div>
+<div>JFK International</div>						<div><label>Terminal:</label>B</div>
+							<div> 								Duration: 10 hours, 25 minutes 							</div>
+						<div>1 stop</div>
+
+						<div class="segDetailSubTitle">Arrival:  11:54 AM</div>
+<div>Seattle Tacoma Intl Arpt (SEA)</div>											</div>
+				</td>
+				<td>
+					<div>
+							<div class="segDetailSubTitle">Confirmation: TMIQKZ</div>
+						
+						 <div>
+							 <span class="txtLabel">Status:</span> <span style="color:#13820d; font-weight:700">Confirmed</span>
+						 </div>
+
+
+					</div>
+					<div class="ReservationHelpfulMessage">
+						<div>&nbsp;</div>
+					</div>
+				</td>
+			</tr>
+
+
+				 <tr>
+					<th data-cnqr-txt="Ignore" style="text-align:left" class="seg_section_title" colspan="2">
+						Additional Details
+					</th>
+				 </tr>
+
+<tr><td data-cnqr-txt="NewLine">Aircraft: Boeing 737-800</td><td data-cnqr-txt="NewLine">Distance: 2321 miles</td></tr>						<tr>
+							<td>
+E-Ticket							</td>
+							<td>
+Total Points: +279 pts booked							</td>
+						</tr>	
+<tr><td colspan="2">Emissions: 898.2&nbsp;lbs&nbsp;CO<sub>2</sub></td></tr><tr><td data-cnqr-txt="NewLine">Cabin: Economy&nbsp;(G)</td><td data-cnqr-txt="NewLine">Meal: Food for purchase</td></tr><tr><td colspan="2"></td></tr>
+
+
+
+
+		</tbody></table>
+	</div>
+
+
+	</td></tr>
+
+</tbody></table>
+
+</div>
+
+					</td>
+				</tr>
+			</tbody></table>
+			</div>
+			<div>
+			<table cellspacing="0" cellpadding="0" role="presentation" style="width:100%">
+				<tbody><tr>
+					<td>
+
+
+
+
+<div data-brkey="worldspan$2RP7XP" id="H_11349549" class="seg hotel">
+ 
+<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse:collapse; width:100%;">
+		</table>
+
+</div>
+
+										<div class="terminateTimeline">
+											<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse:collapse; width:100%;margin-bottom: 15px;">
+												<tbody><tr>
+													<td style="background: none" data-type="H" class="timeline">
+														<img width="13" height="13" title="" style="margin: 0 auto;display:block" src="https://www.concursolutions.com/static/images/ItineraryUI/Hotel-Dot.png" alt="">
+													</td>
+													<td></td>
+												</tr>
+											</tbody></table>
+										</div>
+
+					</td>
+				</tr>
+			</tbody></table>
+			</div>
+						<div class="segdetailsdate">
+								<h3>Thursday, May 21, 2015</h3>
+						</div>
+			<div>
+			<table cellspacing="0" cellpadding="0" role="presentation" style="width:100%">
+				<tbody><tr>
+					<td>
+
+
+
+
+
+
+
+ <div data-brkey="worldspan$2RP7XP" id="A_11349524" class="seg airseg">
+ 
+<table cellspacing="0" cellpadding="0" border="0" role="presentation" class="flight" style="border-collapse:collapse; width:100%;">
+	
+		<tbody><tr><td data-type="A" class="timeline first" rowspan="99">
+			<div style="background-image: none;"></div>
+<img width="36" height="36" title="" src="https://www.concursolutions.com/static/images/ItineraryUI/Flight36.png" alt="">	</td></tr>
+
+	<tr>
+		<td style="padding-left:4px;padding-right:15px;">
+			<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse:collapse; width:100%;">
+				<tbody><tr style="vertical-align:middle">
+					<td>
+						<div class="sgTitle">
+							<h4 class="segDetailTitle"><span class="segprehead">Flight</span> <strong>Seattle, WA</strong> (SEA) to <strong>New York, NY</strong> (JFK)</h4>
+						</div>
+					</td>
+					<td>
+
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="padding-left:4px;">
+			<div id="flightSegNum11349524" class="segDetailSubTitle">
+				Alaska Airlines&nbsp;2
+			</div>
+
+
+		</td>
+	</tr>
+	<tr><td>
+
+
+	<div class="sgDetail">
+		<table role="presentation" style="width:100%; border-collapse:collapse">
+			<colgroup><col width="43%"><col width="56%"></colgroup>
+
+
+
+			<tbody><tr>
+				<td>
+					<div>
+						<div class="segDetailSubTitle">Departure:  11:00 AM</div>
+						<div class="segSeats">
+<div><label>Seat:</label><span id="seatSelectionFlight_AS2_2015-03-05T14:17:00_2015-03-05T21:59:00_G">28D</span></div>
+						</div>
+<div>Seattle Tacoma Intl Arpt (SEA)</div>						
+							<div> 								Duration: 7 hours, 34 minutes 							</div>
+						<div>Nonstop</div>
+
+						<div class="segDetailSubTitle">Arrival:  09:34 PM</div>
+<div>JFK International</div>						<div><label>Terminal:</label>B</div>					</div>
+				</td>
+				<td>
+					<div>
+							<div class="segDetailSubTitle">Confirmation: TMIQKZ</div>
+						
+						 <div>
+							 <span class="txtLabel">Status:</span> <span style="color:#13820d; font-weight:700">Confirmed</span>
+						 </div>
+
+
+					</div>
+					<div class="ReservationHelpfulMessage">
+						<div>&nbsp;</div>
+					</div>
+				</td>
+			</tr>
+
+
+				 <tr>
+					<th data-cnqr-txt="Ignore" style="text-align:left" class="seg_section_title" colspan="2">
+						Additional Details
+					</th>
+				 </tr>
+
+<tr><td data-cnqr-txt="NewLine">Aircraft: Boeing 737-800</td><td data-cnqr-txt="NewLine">Distance: 2321 miles</td></tr>						<tr>
+							<td>
+E-Ticket							</td>
+							<td>
+Total Points: +279 pts booked							</td>
+						</tr>	
+<tr><td colspan="2">Emissions: 898.2&nbsp;lbs&nbsp;CO<sub>2</sub></td></tr><tr><td data-cnqr-txt="NewLine">Cabin: Economy&nbsp;(G)</td><td data-cnqr-txt="NewLine">Meal: Food for purchase</td></tr><tr><td colspan="2"></td></tr>
+
+
+
+
+		</tbody></table>
+	</div>
+
+
+	</td></tr>
+
+</tbody></table>
+
+</div>
+										<div class="terminateTimeline">
+											<table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse:collapse; width:100%;margin-bottom: 15px;">
+												<tbody><tr>
+													<td style="background: none" data-type="A" class="timeline">
+														<img width="13" height="13" title="" style="margin: 0 auto;display:block" src="https://www.concursolutions.com/static/images/ItineraryUI/Flight-Dot.png" alt="">
+													</td>
+													<td></td>
+												</tr>
+											</tbody></table>
+										</div>
+
+					</td>
+				</tr>
+			</tbody></table>
+			</div>
+				</div> <!-- segdetailsouter 3 last one-->		<div>
+			 
+
+<style type="text/css">
+	
+	.estCostv2 
+	{
+		color:  #49577E;
+		border-collapse:collapse;
+	}
+	.estCostv2 td 
+	{
+		text-align:right; padding-left:20px; padding-right:4px; padding-top:2px; padding-bottom:2px; font-weight:normal;
+	}
+	.estCostv2 th 
+	{
+		text-align:left; padding-right:4px;	font-weight:bold;
+	}
+	.l0 th 
+	{
+		font-size: 12px; padding-left:4px;
+	}
+	.l0 td 
+	{
+		font-weight:normal; font-size: 12px;
+	}
+	.lt th 
+	{
+		font-size: 12px; padding-left:4px; text-align:right!Important; padding-bottom:4px; border-bottom:0px;
+	}
+	.lt td 
+	{
+		font-size: 12px; border-top:solid 1px #BFBFBF; padding-bottom:4px;
+	}
+	.l1 th 
+	{
+		font-size: 11px; padding-left:24px;
+	}
+	.l1 td 
+	{
+		font-weight:normal; font-size: 12px;
+	}
+	.l2 th 
+	{
+		font-weight:Normal!Important; font-size: 8pt; padding-left:34px; text-align:left; 
+	}
+	.l2 td 
+	{
+		font-weight:normal!Important; font-size: 8pt; 
+	}
+	.l3 th 
+	{
+		color: #808080!Important; font-weight:normal!Important; font-size: 10px; padding-left:44px;
+	}
+	.l3 td 
+	{
+		color: #808080!Important; 
+		font-weight:normal!Important;
+		font-size: 10px;
+	}
+
+	#empty .timeline, #empty .seglnksaddcol {
+		display: none;
+	}
+
+	#empty .sglnksall {
+		padding-top: 5px;
+		display: block;
+	}
+
+	#empty h3 {
+		margin-left: 15px;
+	}
+	#empty {
+		margin-top: 15px;
+	}
+</style>
+
+
+		<div style="margin-top:10px;" id="dFooter">
+			<div class="segdetailsouter clearfix">
+				<div id="TotalEstimatedCost" name="TotalEstimatedCost" class="titledetailstext">
+					<h2>Total Estimated Cost </h2>
+				</div>
+				<div class="itin_title_table">
+							<table cellspacing="4px" cellpadding="0" border="0" role="presentation" class="estCostv2">
+
+<tbody><tr class="l0"><th>Air</th><td></td><td></td><th style="text-align:left; padding-left:0;"><a onclick="javascript:popupFareRules_v2('','Worldspan','')" href="javascript:void(0)" class="notForPrint" role="button">View Fare Rules</a></th></tr><tr class="l1"><th>Ticket Number: 0277535356511:</th><td></td><td><span style="font-weight:normal">$</span><b>308.84</b> <span style="font-weight:normal"> USD</span></td><th style="text-align:left; padding-left:0;"></th></tr><tr class="l1"><th>Taxes and fees:</th><td></td><td><span style="font-weight:normal">$</span><b>51.36</b> <span style="font-weight:normal"> USD</span></td><th style="text-align:left; padding-left:0;"></th></tr><tr class="lt"><th>Air Total Price:</th><td></td><td><span style="font-weight:normal">$</span><b>360.20</b> <span style="font-weight:normal"> USD</span></td><th></th></tr><tr class="l0"><th>Hotel:</th><td></td><td><span style="font-weight:normal">$</span><b>735.00</b> <span style="font-weight:normal"> USD</span></td><th style="text-align:left; padding-left:0;"></th></tr>
+
+							<tr><td style="height:4px; border-top: 1px solid #BFBFBF; " colspan="4"></td></tr>
+
+<tr class="l0"><th>Total Estimated Cost:</th><td></td><td><span style="font-weight:normal">$</span><b>1,095.20</b> <span style="font-weight:normal"> USD</span></td><th style="text-align:left; padding-left:0;"></th></tr><tr class="l0"><th>Total&nbsp;Travel Points:</th><td></td><td>+&nbsp;309&nbsp;pts</td><th style="text-align:left; padding-left:0;"></th></tr>
+							
+							</tbody></table>
+
+
+
+
+
+
+
+							<fieldset class="notForPrint online-checkin">
+								<legend>On-line Check-in</legend>
+
+												<div class="segment">
+													<p><a class="heading4" href="https://www.concursolutions.com/twPopup/popup_OnLineCheckIn.asp?carrierRecLoc=TMIQKZ&amp;carrierCode=AS&amp;firstName=Hicham.Mohamed&amp;lastName=El.Hammouchi&amp;deptDate=3/2/2015 8:00:00 AM&amp;deptAirp=DCA&amp;carrierName=Alaska Airlines&amp;lanCode=&amp;contCheckinId=" style="white-space: nowrap;" target="_blank">Alaska Airlines Check-in</a></p>
+													<p class="notice">You can check-in on-line up to <b>24</b> hours before your flight. You may print your boarding pass at your home or office to avoid ticket counters and kiosks and go right to security. Click the Check-in button to find out more.</p>
+													<p><b style="padding-right: 4px;">Confirmation:</b><b style="color: blue;">TMIQKZ</b></p>
+												</div>
+							</fieldset>
+
+
+
+
+
+				</div>
+			</div>
+
+					<div class="segdetailsouter clearfix">
+						<div class="titledetailstext">
+							<h2>Remarks</h2>
+						</div>
+						<div class="itin_title_table">
+							<div style="font-family:'Courier New', 'Courier'; margin-top:10px;  padding:4px; ">
+								<div>
+
+									<div>
+OLB-US GOVERNMENT TEAM											<br>
+U89/A99E717062											<br>
+U25/101779											<br>
+CB/TRP/TRIP FROM WASHINGTON TO SEATTLE MARCH 2 - 5											<br>
+U05/92I/35*C73											<br>
+U29/ANDREWC@CONCUR.COM											<br>
+U68/HICHAM.ELHAMMOUCHI@CONCUR.COM											<br>
+U78/CF											<br>
+U81/WORLDSPAN											<br>
+AFF/360.20*LF-LF/360.20											<br>
+U90/											<br>
+									</div>
+								</div>
+							</div>
+							<br>
+						</div>
+					</div>
+
+
+
+		</div>
+		<div>
+
+
+
+
+
+		</div>
+
+
+
+ 
+		</div>
+
+
+
+</div><!-- itinerary -->
+
+		</div>
+	
+		<div align="center" style="padding-top:5px"><input type="button" name="btnBack" id="btnBack" onclick="javascript: history.back();" value="Back" style="width:100px"></div>
+		
+<script language="javascript">
+&lt;!--
+	var travelWin;
+
+	function returnNewTripWindowArray()
+	{
+		
+		var winWidth, winHeight;
+		var screenWidth = screen.availWidth;
+		var screenHeight = screen.availHeight;
+		
+		var maxHeight = 660;
+		var offLimits = 30; // unusable area
+		var wSize = GetCookie("wizardsize");
+		if (wSize == "" || wSize == null)
+		{
+			winWidth = 780;
+			// Fit to screen, or max of 690
+			winHeight = (screenHeight &gt; 720) ? maxHeight : screenHeight - offLimits;
+		}
+		else
+		{
+			var arrSize = wSize.split(":");
+			winWidth = parseInt(arrSize[0]);
+			winHeight = parseInt(arrSize[1]);
+			// Reject oddball sizes
+			if (winWidth &lt; 500) winWidth = 780;
+			if (winHeight &lt; 200) winHeight = (screenHeight &gt; 720) ? maxHeight : screenHeight - offLimits;
+		}
+		// At left for 800x600, centered otherwise
+		var oLeft = (screenWidth &lt;= 800) ? 4 : (screenWidth - winWidth) / 2;
+		// At top for 800x600, centered otherwise - adjusted to allow a pixel or 2
+		// at 800x600
+		var oTop =  (screenHeight &gt; 600) ? (screenHeight - winHeight - offLimits)/2 : 1;
+		
+		var tripWinArray = new Array();
+		tripWinArray["oLeft"] = oLeft;
+		tripWinArray["oTop"] = oTop;
+		tripWinArray["winHeight"] = winHeight;
+		tripWinArray["winWidth"] = winWidth;
+		
+		return tripWinArray;
+	}
+
+
+	function newTravel_onclick(url)
+	{		
+		if (typeof(url) == "undefined") url = "";
+		// No url, open start page, will default to current date
+		// Date passed in querystring open wizard but querystring in url will set tripMgr.FirstTravelDate
+		// Editing a trip - url will contain a Trip ID ("tid=") - open to showtrip using tid in url
+		var newTrip_NoDate = true;
+		if (url != "" || url.indexOf("tid=") &gt;= 0 ) newTrip_NoDate = false;
+
+		
+		var canSwitchToHttps = "0";
+		var wizurl = "https://www.concursolutions.com/travelwizard/wizard_processing.asp";
+
+		if (typeof(travelWin) == 'undefined' || travelWin == null || travelWin.closed)
+		{
+			var winprops = '';
+			
+			if (!document.getElementById)
+			{
+				var confMsg = "Concur functions best in Internet Explorer versions 6.0 and up.\r\n\r\nContinue opening Concur?";
+				if (!confirm(confMsg))
+				{
+					return;
+				}
+			}
+			if (newTrip_NoDate)
+			{
+				wizurl = wizurl + '?frmMethod=get&amp;nextpage=' + escape('/travelwizard/twTripStart.asp');
+				//travelWin = window.open('/travelwizard/twTripStart.asp', "TravelWizard", "width=780,height=540,status=no,resizable=no,left=" + oLeft + ",top=" + oTop + ",screenX=3,screenY=3");
+			}
+			else
+			{
+				wizurl = wizurl + '?frmMethod=get&amp;nextpage=' + url.replace('?', '&amp;');
+				//travelWin = window.open(url, "TravelWizard", "width=780,height=540,status=no,resizable=no,left=" + oLeft + ",top=" + oTop + ",screenX=3,screenY=3");
+			}
+			wizurl = wizurl + "&amp;useHttpForNextPage=" + canSwitchToHttps;
+
+			
+			document.location.href = wizurl;
+		}
+		else
+		{
+			if (!newTrip_NoDate)
+			{
+				wizurl = wizurl + '?frmMethod=get&amp;nextpage=' + url.replace('?', '&amp;');
+				wizurl = wizurl + "&amp;useHttpForNextPage=" + canSwitchToHttps;
+				travelWin.document.location.href = wizurl;
+			}
+			travelWin.focus();
+		}
+		
+		return;
+	}
+	
+	// Called below and when a window is opened that needs the window refreshed on closing
+	// Aviods error of trying to refresh a non-existant window if main window is changed or closed
+	function refreshPage()
+	{
+		var winCook = GetCookie('winOpen')
+		// Clear interval if user has canceled the Wizard
+		if (winCook == 'closed') { winCheck = "" }
+		if (winCook == 'reload')
+		{
+			document.location.reload();
+			SetCookie('winOpen', 'closed');
+			winCheck = "";
+		}
+	}
+
+	// Check to see if there is a window open that requires this window to refresh on closing; sets refresh check interval
+	// Used upon returning to myOuttask from another page after opening Wizard or Request window
+	if (GetCookie('winOpen') == 'open')
+	{
+		var winCheck = window.setInterval("refreshPage()",500);
+	}
+
+	var approval
+	function open_window(url, strTitle){
+		if (!approval || approval.closed)
+		{
+			var tripWinArray = returnNewTripWindowArray(); // inc_wizard_opener.asp
+	
+			var oLeft = tripWinArray["oLeft"];
+			var oTop = tripWinArray["oTop"];
+			var winHeight = tripWinArray["winHeight"];
+			var winWidth = tripWinArray["winWidth"];
+		
+			var strOpen = "toolbar=0,location=0,status=1,menubar=0,scrollbars=1,resizable=1,alwaysRaised=1,width=" + winWidth + ",height=" + winHeight + ",left=" + oLeft + ",top=" + oTop;
+			approval = window.open(url, strTitle,strOpen);
+			// Set cookie to tell page upon return from elsewhere that the interval needs to run to check for a need to refresh the page...
+			SetCookie('winOpen', 'open');
+			// .. and start the interval now
+			var winCheck = window.setInterval("refreshPage()",500);
+		}
+		else
+		{
+			approval.location.href = url;
+			approval.focus();
+		}
+	}
+	
+//--&gt;
+</script>
+
+	<script language="javascript">
+
+		function PrintItinerary() {
+			var url = "/twPopup/Popup_Print_Email_Availability.asp?triptype=i";
+			popupWindow(url, 'flightOptions', 800, 600, 'status=no,scrollbars=no,menubar=no,dialog=1');
+		}
+
+		function EmailItinerary() {
+			MailItinerary('gWqgbvEn$pMp8fBXq4mfEFO0Rm$sLtrWFO8IqI');
+		}
+
+		function addToOutlook() {
+			var strURL = "/travelwizard/addItineraryToOutlook.asp";
+			strURL += "?tripID=" + 'gWqgbvEn$pMp8fBXq4mfEFO0Rm$sLtrWFO8IqI';
+			strURL += '&amp;uid=' + 'gWqYsbct$pw92zAfAe8CF0YNweYfnGkNyK1g';
+			strURL += '&amp;cid=' + 'gWsqw5Q6AeyLmI1IHf$s$sH7o9H';
+			popupWindow(strURL, 'AddToOutlook', 400, 300);
+		}
+
+		function addAndSubmitICalendarForm(newICalendarForm) {
+			var iCalendarForm = $('iCalendarForm');
+			if (!iCalendarForm) {
+				iCalendarForm = new Element('form', { 'id': 'iCalendarForm', 'name': 'iCalendarForm', 'method': 'post', 'action': '/common/vcal.asp' });
+				$(document.body).insert(iCalendarForm);
+			}
+			if (iCalendarForm &amp;&amp; newICalendarForm.name == 'iCalendarForm') {
+				iCalendarForm.update(newICalendarForm.innerHTML);
+				iCalendarForm.submit();
+			}
+		}
+
+		function popupViewEReceipts() {
+			var strURL = "/twPopup/view_ereceipts.asp";
+			strURL += "?TripId=" + 'gWqgbvEn$pMp8fBXq4mfEFO0Rm$sLtrWFO8IqI';
+			strURL += '&amp;uid=' + 'gWqYsbct$pw92zAfAe8CF0YNweYfnGkNyK1g';
+			strURL += '&amp;cid=' + 'gWsqw5Q6AeyLmI1IHf$s$sH7o9H';
+			popupWindow(strURL, 'ViewEReceipts', 770, 450);
+		}
+
+		function createTemplate() {
+			var strURL = '/common/processing.asp?nextpage=/traveltemplate/travel_template_create.asp&amp;backpage=/traveltemplate/user_travel_template_view.asp';
+			strURL += '&amp;radCloneType=tripid&amp;tripID=gWqgbvEn$pMp8fBXq4mfEFO0Rm$sLtrWFO8IqI';
+			open_link(strURL);
+		}
+
+		function viewHistory() {
+			
+				var strURL = '/request_view.asp';
+				strURL += '?transactionid=' + 'gWjQqqzbyBFQUwgGWpr9XU5nNgvQ7qkamlmE';
+				strURL += '&amp;tripID=' + 'gWqgbvEn$pMp8fBXq4mfEFO0Rm$sLtrWFO8IqI';
+				open_window(strURL, 'ApprovalWin');
+			
+		}
+
+	</script>
+	<!-- End Body -->
+
+				</div>
+			
+		</div>
+	</div> <!-- container appContent-->
+
+	
+		<!-- Begin Footer -->
+<script type="text/javascript" src="https://www.concursolutions.com/jscache/minified/8DF52BB96B1DBE68BBC592EFEBF443D75FDD0099_A07076085C35944E5CB9196B24CD79D8D03C19A3AZ.js?jslist=/j/menubar.js,/j/moretoolbar.js,/static/scripts/views/shared/menu-gateway.js&amp;cachekilla=A07076085C35944E5CB9196B24CD79D8D03C19A3"></script>
+<!-- End Footer -->
+
+
+
+
+
+
+
+
+
+
+<div class="container cnqr-app-footer">
+	<div class="row cnqr-first">
+	<div class="col-md-3 col-sm-3">
+				<h6><span class="screen-reader-only">Concur</span><img width="100%" id="img-footer" src="http://assets.concur.com/logos/Concur_Logo_HZ_Reverse_500px.png"></h6>
+
+	</div>
+					<div class="col-md-3 col-sm-3"></div>
+					<div class="col-md-3 col-sm-3"></div>
+	<div class="col-md-3 col-sm-3">
+		<a href="https://www.concursolutions.com/locate/webcheckin.asp" class="pull-right btn btn-large cnqr-muted cnqr-locate-btn"><i aria-hidden="true" class="icon-locate pull-left"></i>Location Check-In</a>
+	</div>
+</div><div class="row">	<div class="col-md-3 col-sm-3">
+		<h6>Support</h6>
+		<ul>
+			<li><a href="javascript:void(window.open('/SamlRedirector/ServiceCloudSAMLLogin.aspx'));" role="button">Contact Support</a></li>
+		</ul>
+	</div>
+	<div class="col-md-3 col-sm-3">
+		<h6>Company Policy</h6>
+		<ul>
+				<li><a data-url="/twPopup/travel_rules_popup.asp" data-name="policy" data-width="600" data-height="540" data-toggle="popupwindow" href="https://www.concursolutions.com/twPopup/travel_rules_popup.asp">Travel Policy</a></li>
+		</ul>
+	</div>
+					<div class="col-md-3 col-sm-3"></div>
+	<div class="col-md-3 col-sm-3">
+		<div data-dfpslot-height="55" data-dfpslot-width="224" id="gatFooter" class="IPMBanner pull-right"></div>
+	</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-6 copyright">
+			&copy; Copyright 2015 - Concur - All Rights Reserved
+			
+		</div>
+		<div class="col-md-6 col-sm-6">
+				<a role="button" href="javascript:void(0)" data-popup-title="Login History" id="login-history-link" class="pull-right">
+					Last logged in: 05/03/2015 4:09 AM
+					
+				</a>
+
+			<div id="login-history-popup"></div>
+		</div>
+	</div>
+	
+	
+</div> <!-- end container cnqr-app-footer -->
+	
+		
+<div class="end-of-page" id="endOfPage"><a class="screen-reader-only-focusable" href="#cnqrBody">End of page. Go to top of page</a></div></form>
+
+
+
+
+<script type="text/javascript" id="">(function(){Date.now||(Date.now=function(){return+new Date})})();var _gtmStartTime=Date.now(),_routingChannel={};(function(){this.publishEvent=function(b,a){a=a||{};a.event=b;_routingDataLayer.push(a)}}).apply(_routingChannel);_routingChannel.publishEvent("Load Framework Container");</script><script type="text/javascript" id="">window._frameworkDataLayer?window.console&amp;&amp;console.log("Failed to load GTM container: Data layer naming conflict: _frameworkDataLayer"):_loadGTMContainer("_frameworkDataLayer","GTM-MSV2ZK");</script><script type="text/javascript" id="">var _frameworkChannel={};(function(){this.publishEvent=function(b,a){a=a||{};a.event=b;_frameworkDataLayer.push(a)}}).apply(_frameworkChannel);_frameworkChannel.publishEvent("Load Library - Core");</script><script type="text/javascript" id="">var _analytics=_analytics||{};
+(function(){this.AccountType={GA_CLASSIC:"GA_CLASSIC",GA_UNIVERSAL:"GA_UNIVERSAL"};this.trackPageview=function(a){_frameworkChannel.publishEvent("trackPageview",{pageURL:a})};this.trackEvent=function(a,c,b,d){d=d||{};if(!d.value)for(var g=function(b,a){return a?b?"string"==typeof a?0&lt;=b.indexOf(a):a.test(b):"string"==typeof a?""==a:a.test(""):!0},e=_siteChannel.getEventValueAssignments(),f=0;f&lt;e.length;f++){var h=e[f][0],k=e[f][1],l=e[f][2],m=e[f][3];if(g(a,h)&amp;&amp;g(c,k)&amp;&amp;g(b,l)){d.value=m;break}}_frameworkChannel.publishEvent("trackEvent",
+{eventCategory:a,eventAction:c,eventLabel:b,eventValue:d.value,nonInteraction:d.nonInteraction})};this.trackSocial=function(a,c,b,d){d=d||{};_frameworkChannel.publishEvent("trackSocial",{socialNetwork:a,socialAction:c,socialTarget:b,socialPageURL:d.pageURL})};this.setDimension=function(a,c,b){b=b||{};switch(b.scope){case "user":case "visitor":b.scope=1;break;case "session":case "visit":b.scope=2;break;case "hit":case "page":b.scope=3}_frameworkChannel.publishEvent("setDimension",{dimensionIndex:a,
+dimensionValue:c,dimensionName:b.name,dimensionScope:b.scope})};this.setMetric=function(a,c){_frameworkChannel.publishEvent("setMetric",{metricIndex:a,metricValue:c})};this.setContentGroup=function(a,c){_frameworkChannel.publishEvent("setContentGroup",{groupIndex:a,groupName:c})};this.addTrans=function(a,c,b,d,g,e,f,h){_frameworkChannel.publishEvent("addTrans",{transactionId:a,transactionAffiliation:c,transactionRevenue:b,transactionShipping:d,transactionTax:g,transactionCity:e,transactionState:f,
+transactionCountry:h})};this.addItem=function(a,c,b,d,g,e){_frameworkChannel.publishEvent("addItem",{transactionId:a,productId:c,productName:b,productCategory:d,productPrice:g,productQuantity:e})};this.trackTrans=function(){_frameworkChannel.publishEvent("trackTrans")}}).apply(_analytics);_frameworkChannel.publishEvent("Load Library - Ecommerce");</script><script type="text/javascript" id="">var _analytics=_analytics||{};
+(function(){this.setEcommerceAction=function(a){switch(a){case "detail":case "add":case "remove":case "promo_click":_frameworkChannel.publishEvent("setEcommerceAction",{ecommerceAction:a})}};this.addImpression=function(a,b,c,d,e,f,g,h){_frameworkChannel.publishEvent("addImpression",{productId:a,productName:b,productCategory:c,productBrand:d,productVariant:e,productPrice:f,productList:g,productPosition:h})};this.trackImpression=function(a,b,c,d,e,f,g,h){this.addImpression(a,b,c,d,e,f,g,h);this.trackEvent("ecommerce",
+"impression",void 0,{nonInteration:!0})};this.addPromo=function(a,b,c,d){_frameworkChannel.publishEvent("addPromo",{promoId:a,promoName:b,promoCreative:c,promoPosition:d})};this.trackPromoView=function(a,b,c,d){this.addPromo(a,b,c,d);this.setEcommerceAction("detail");this.trackEvent("ecommerce","promo view",void 0,{nonInteration:!0})};this.trackPromoClick=function(a,b,c,d){this.addPromo(a,b,c,d);this.setEcommerceAction("promo_click");this.trackEvent("ecommerce","promo click",void 0,{nonInteration:!0})};
+this.addProduct=function(a,b,c,d,e,f,g,h,k){_frameworkChannel.publishEvent("addProduct",{productId:a,productName:b,productCategory:c,productBrand:d,productVariant:e,productPrice:f,productQuantity:g,productCoupon:h,productPosition:k})};this.trackProductView=function(a,b,c,d,e){this.addProduct(a,b,c,d,e);this.setEcommerceAction("detail");this.trackEvent("ecommerce","product view",void 0,{nonInteration:!0})};this.trackProductClick=function(a,b,c,d,e,f,g){this.addProduct(a,b,c,d,e,void 0,void 0,void 0,
+g);this.setProductClick(f);this.trackEvent("ecommerce","product click",void 0,{nonInteration:!0})};this.setProductClick=function(a){_frameworkChannel.publishEvent("setProductClick",{productList:a})};this.trackCartAddition=function(a,b,c,d,e,f,g){this.addProduct(a,b,c,d,e,f,g);this.setEcommerceAction("add");this.trackEvent("ecommerce","cart addition",void 0,{nonInteration:!0})};this.trackCartRemoval=function(a,b,c,d,e,f,g){this.addProduct(a,b,c,d,e,f,g);this.setEcommerceAction("remove");this.trackEvent("ecommerce",
+"cart removal",void 0,{nonInteration:!0})};this.setCheckoutStep=function(a,b){_frameworkChannel.publishEvent("setCheckoutStep",{checkoutStep:a,checkoutOption:b})};this.trackCheckoutStep=function(a,b){this.setCheckoutStep(a,b);this.trackEvent("ecommerce","checkout step",void 0,{nonInteration:!0})};this.setCheckoutOption=function(a,b){_frameworkChannel.publishEvent("setCheckoutOption",{checkoutStep:a,checkoutOption:b})};this.trackCheckoutOption=function(a,b){this.setCheckoutOption(a,b);this.trackEvent("ecommerce",
+"checkout option",void 0,{nonInteration:!0})};this.setPurchase=function(a,b,c,d,e,f){_frameworkChannel.publishEvent("setPurchase",{transactionId:a,transactionAffiliation:b,transactionRevenue:c,transactionTax:d,transactionShipping:e,transactionCoupon:f})};this.trackPurchase=function(a,b,c,d,e,f){this.setPurchase(a,b,c,d,e,f);this.trackEvent("ecommerce","purchase",void 0,{nonInteration:!0})};this.setRefund=function(a){_frameworkChannel.publishEvent("setRefund",{transactionId:a})};this.trackRefundProduct=
+function(a,b,c){this.addProduct(b,void 0,void 0,void 0,void 0,void 0,c);this.setRefund(a);this.trackEvent("ecommerce","refund product",void 0,{nonInteration:!0})};this.trackRefundPurchase=function(a){this.setRefund(a);this.trackEvent("ecommerce","refund purchase",void 0,{nonInteration:!0})}}).apply(_analytics);_frameworkChannel.publishEvent("Load Library - Forms");</script><script type="text/javascript" id="">var _analytics=_analytics||{};
+(function(){this.trackFormSubmit=function(b){var c=b.getAttribute("id")||"ID";b=b.getAttribute("name")||"NAME";this.trackEvent("forms","form submit","Form - "+c+"/"+b)};this.tagFormFields=function(b){function c(a){var b,c;a.form&amp;&amp;(b=a.form.getAttribute("id"),c=a.form.getAttribute("name"));b=b?b:"ID";c=c?c:"NAME";var d=a.getAttribute("id")?a.getAttribute("id"):"ID";a=a.getAttribute("name")?a.getAttribute("name"):"NAME";_analytics.trackEvent("forms","form field update","Form - "+b+"/"+c+" | Field - "+
+d+"/"+a)}if(b)for(var g=["input","select","textarea"],d=0;d&lt;g.length;d++)for(var h=b.getElementsByTagName(g[d]),e=0;e&lt;h.length;e++){var a=h[e];if(!a.tagged){var k=a.tagName,f=a.getAttribute("type");/submit/i.test(f)||(/input/i.test(k)&amp;&amp;/date$|month|week|^time|datetime-local|number|range|color/i.test(f)?(a.original_event=a.onblur,a.onblur=function(){c(this);this.original_event&amp;&amp;this.original_event()}):/input/i.test(k)&amp;&amp;/radio|checkbox|button/i.test(f)?(a.original_event=a.onclick,a.onclick=function(){c(this);
+this.original_event&amp;&amp;this.original_event()}):(a.original_event=a.onchange,a.onchange=function(){c(this);this.original_event&amp;&amp;this.original_event()}),a.tagged=!0)}}}}).apply(_analytics);_frameworkChannel.publishEvent("Load Library - Links");</script><script type="text/javascript" id="">var _analytics=_analytics||{};
+(function(){this.trackLinkClick=function(c){var e=c.href;if(e&amp;&amp;!e.match(/^javascript:/i))if(e.match(/^mailto:/i))this.trackEvent("mailto","click",e.replace(/^mailto:/i,""));else if(e.match(/^tel:/i))this.trackEvent("tel","click",e.replace(/^tel:/i,""));else if(e.match(/^https?:/i)){var a;a=c;var b=_siteChannel.getDownloadableFileTypes(),b=new RegExp(".*\\.("+b.join("|")+")(\\?.*|#.*)?$","i");b.test(a.href)?(_analytics.trackEvent("download","click",a.href),a=!0):a=!1;if(!a){a:{a=c;for(var b=_siteChannel.getSocialTrackingRules(),
+d=0;d&lt;b.length;d++){var f=b[d][0],g=b[d][1],h=b[d][2],k=b[d][3];if(h&amp;&amp;h.test(a.href)){_analytics.trackSocial(f,g,a.href);a=!0;break a}else if(k==a.id){_analytics.trackSocial(f,g,a.id);a=!0;break a}}a=!1}if(!a){if(c.hostname){c=c.hostname;a=-1!=c.indexOf(_siteChannel.getDomain());if(!a)for(b=_siteChannel.getInNetworkDomains(),d=0;d&lt;b.length;d++)if(-1!=c.indexOf(b[d].toLowerCase())){a=!0;break}c=a}else c=!0;c||this.trackEvent("outbound","click",e)}}}}}).apply(_analytics);_frameworkChannel.publishEvent("Load Library - Supplemental");</script><script type="text/javascript" id="">var _analytics=_analytics||{};
+(function(){this.getCookie=function(c){var b=document.cookie,a=b.indexOf(" "+c+"\x3d");-1==a&amp;&amp;(a=b.indexOf(c+"\x3d"),1&lt;a&amp;&amp;(a=-1));-1==a?b=null:(a=b.indexOf("\x3d",a)+1,c=b.indexOf(";",a),-1==c&amp;&amp;(c=b.length),b=unescape(b.substring(a,c)));return b};this.setCookie=function(c,b,a,d,f){a||(a=30);var e=new Date;e.setDate(e.getDate()+a);document.cookie=c+"\x3d"+b+";expires\x3d"+(0&gt;a?"":e.toGMTString())+";path\x3d"+(d?d:"/")+";domain\x3d"+(f?f:this.getTopLevelDomain())};this.deleteCookie=function(c,b,a){document.cookie=
+c+"\x3d;expires\x3dThu, 01-Jan-1970 00:00:01 GMT;path\x3d"+(b?b:"/")+";domain\x3d"+(a?a:this.getTopLevelDomain())};this.getTopLevelDomain=function(){for(var c=document.domain.split(".").reverse(),b="__test__",a=c[0],d=0;d&lt;c.length;d++){document.cookie=b+"\x3d__test__;path\x3d/;domain\x3d"+a;if(null!=this.getCookie(b))return document.cookie=b+"\x3d;expires\x3dThu, 01-Jan-1970 00:00:01 GMT;path\x3d/;domain\x3d"+a,a;a=c[d+1]+"."+a}};this.getURLParameter=function(c,b){var a=decodeURI((RegExp(c+"\x3d(.+?)(\x26|$)",
+"i").exec(location.search)||[,""])[1]);return!a&amp;&amp;b?b:a};this.ready=function(c){/in/.test(document.readyState)?setTimeout("_analytics.ready("+c+")",9):c()};this.jQueryReady=function(c){window.jQuery?c():setTimeout("_analytics.jQueryReady("+c+")",9)};this.createLabel=function(){for(var c=[],b=0;b&lt;arguments.length;b++){var a=arguments[b];c[b]=a instanceof Array?a[0]+"\x3d"+a[1]:void 0==a?"undefined":a}return c.join("|")};this.appendScript=function(c,b){b=b||{};var a=document.createElement("script");
+a.type="text/javascript";a.async="true";a.src=c;if(b.callback){var d=!1;a.onload=a.onreadystatechange=function(){d||this.readyState&amp;&amp;"loaded"!==this.readyState&amp;&amp;"complete"!==this.readyState||(d=!0,b.callback(),a.onload=a.onreadystatechange=null)}}b.scope?b.scope.appendChild(a):document.getElementsByTagName("head")[0].appendChild(a)}}).apply(_analytics);_frameworkChannel.publishEvent("Load Library - Account");</script><script type="text/javascript" id="">var _analytics=_analytics||{};(function(){}).apply(_analytics);_routingChannel.publishEvent("Framework Container Loaded");</script><script type="text/javascript" id="">window._siteDataLayer?window.console&amp;&amp;console.log("Failed to load GTM container: Data layer naming conflict: _siteDataLayer"):_loadGTMContainer("_siteDataLayer","GTM-WGMG5K");</script><script type="text/javascript" id="">var _siteChannel={};
+(function(){this.publishEvent=function(b,a){a=a||{};a.event=b;_siteDataLayer.push(a)};this.getAccountId=function(b){switch(b){case _analytics.AccountType.GA_UNIVERSAL:return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332205')}};this.getDomain=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332206')};this.getDownloadableFileTypes=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332207')};this.getEventValueAssignments=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332208')};this.getInNetworkDomains=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332210')};this.getPageviewDefinition=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332212')};
+this.getSocialTrackingRules=function(){return google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332213')}}).apply(_siteChannel);_siteChannel.publishEvent("Load Site Library");</script><script type="text/javascript" id="">(function(){String.prototype.trim||(String.prototype.trim=function(){return this.toString().replace(/^([\s]*)|([\s]*)$/g,"")})})();var _analytics=_analytics||{};
+(function(){this.debug=function(a){};this.trim=function(a){if(a)return a.toString().trim()};this.setMetrics=function(){};this.setDimensions=function(){_analytics.setDimension(1,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332216'));_analytics.setDimension(2,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332219'));_analytics.setDimension(3,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332221'));_analytics.setDimension(4,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332223'));_analytics.setDimension(5,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332225'));_analytics.setDimension(6,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332230'));_analytics.setDimension(7,google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332234'));_analytics.setDimension(8,
+location.href)};this.setContentGroups=function(){};this.setEcommerceData=function(){};this.onEvent=function(a,d,c){a&amp;&amp;(a.addEventListener?a.addEventListener(d,c):a.attachEvent&amp;&amp;a.attachEvent("on"+d,function(){c.call(a)}))};this.onDelegatedEvent=function(a,d,c,b){a&amp;&amp;(a.addEventListener?a.addEventListener(d,function(a){a=a.target;do if(c(a)){b.call(a);break}while(a=a&amp;&amp;a.parentNode)}):a.attachEvent&amp;&amp;a.attachEvent("on"+d,function(a){a=a.target;do if(c(a)){b.call(a);break}while(a=a&amp;&amp;a.parentNode)}))};
+this.onDelegatedEvt=function(a,d,c,b){function e(a,b,c){b=document.querySelectorAll(b);a=a.target;do for(var d=0;d&lt;b.length;d++)if(b[d]===a){c.call(a);return}while(a=a&amp;&amp;a.parentNode)}a&amp;&amp;(a.addEventListener?a.addEventListener(d,function(a){e(a,c,b)}):a.attachEvent&amp;&amp;a.attachEvent("on"+d,function(a){e(a,c,b)}))};this.dispatchEvent=function(a,d,c){if(a)if(c=c||{},document.createEvent){var b=document.createEvent("HTMLEvents");b.initEvent(d,!0,!0);b.eventName=d;b.opt_params=c;a.dispatchEvent(b)}else b=
+document.createEventObject(),b.eventType=d,b.eventName=d,b.opt_params=c,a.fireEvent("on"+b.eventType,b)};this.getAttribute=function(a,d){if(a&amp;&amp;a.attributes)for(var c=a.attributes,b=0;b&lt;c.length;b++)if(c[b].nodeName==d)return c[b].nodeValue};this.hasClass=function(a,d){if(a&amp;&amp;a.className){for(var c=a.className.split(" "),b=0;b&lt;c.length;b++)if(c[b].trim()==d)return!0;return!1}}}).apply(_analytics);_siteChannel.publishEvent("Run Analytics Base Tag");</script><script type="text/javascript" id="">google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332235')&amp;&amp;(function(a,c,b){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;_analytics.appendScript("//www.google-analytics.com/analytics.js")}(window,document,"ga"),ga("create",google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332236'),"auto",{allowLinker:!0}),ga("require","displayfeatures"),google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332238')&amp;&amp;ga("set","\x26uid",google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332240')));
+_analytics.ready(function(){function a(){_siteChannel.publishEvent("Run Tracking Tags")}_analytics.setMetrics();_analytics.setDimensions();_analytics.setContentGroups();_analytics.setEcommerceData();_analytics.trackPageview();setTimeout(a,2E3)});</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332086'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332087'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332088'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332089')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332090'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332091'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332092'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332093'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332094'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332095')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332096'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332097'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332098'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332099'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332100'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332101')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332102'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332103'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332104'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332105'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332106'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332107')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332108'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332109'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332110'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332111'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332112'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332113')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332114'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332115'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332116'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332117'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332118'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332119')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332120'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332121'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332122'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332123'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332124'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332125')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332126'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332127'));</script><script type="text/javascript" id="">_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_setCustomVar",google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332128'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332129'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332130'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332131')]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("set","dimension"+google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332132'),google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332133'));</script><script type="text/javascript" id="">(function(){var a=google_tag_manager["GTM-MSV2ZK"].macro('gtm1430656332134'),a=a?a:_siteChannel.getPageviewDefinition();_siteChannel.getAccountId(_analytics.AccountType.GA_CLASSIC)&amp;&amp;_gaq.push(["_trackPageview",a]);_siteChannel.getAccountId(_analytics.AccountType.GA_UNIVERSAL)&amp;&amp;ga("send","pageview",a)})();</script><script type="text/javascript" id="">if(!window.Prototype&amp;&amp;window.jQuery)jQuery(document).on("open.messagebox",function(b,a){a=a||{};var c=a.name||"(not set)",d=a.data;_analytics.trackEvent("MessageBoxes",c,d)});else window.Prototype&amp;&amp;document.observe("customEvent:open.messagebox",function(b){var a=b.memo||{};b=a.name||"(not set)";a=a.data;_analytics.trackEvent("MessageBoxes",b,a)});
+(function(){for(var b=document.querySelectorAll("[aria-label\x3d'Primary Menu'] \x3e li"),a=0;a&lt;b.length;a++)_analytics.onEvent(b[a],"click",function(){var a=_analytics.getAttribute(this,"data-menu-item")||"(not set)";_analytics.trackEvent("Header links","Main nav",_analytics.trim(a))})})();
+(function(){for(var b=document.querySelectorAll("[aria-label\x3d'Secondary Menu'] \x3e li"),a=0;a&lt;b.length;a++)_analytics.onEvent(b[a],"click",function(){var a=this.textContent||this.innerText||"(not set)";_analytics.trackEvent("Header links","Sub nav",_analytics.trim(a))})})();
+(function(){for(var b=document.querySelectorAll("[aria-label\x3d'Primary Menu'] \x3e li ul.dropdown-menu \x3e li \x3e a"),a=0;a&lt;b.length;a++)_analytics.onEvent(b[a],"click",function(){var a=this.textContent||this.innerText||"(not set)";_analytics.trackEvent("Header links","Link drop down",_analytics.trim(a))})})();(function(){var b=document.querySelector("#cnqr-profile-menu-link");_analytics.onEvent(b,"click",function(){_analytics.trackEvent("Header links","Profile","Profile")})})();
+(function(){var b=document.querySelector("#cnqr-profile-popup .btn-toolbar .cnqr-logout");_analytics.onEvent(b,"click",function(){_analytics.trackEvent("Header links","Profile","Sign out")})})();(function(){var b=document.querySelector("#cnqr-profile-popup .btn-toolbar a[href^\x3d'/profile/profile_user.asp']");_analytics.onEvent(b,"click",function(){_analytics.trackEvent("Header links","Profile","Settings")})})();
+(function(){var b=document.querySelector("#cnqr-profile-popup-apply");_analytics.onEvent(b,"click",function(){var a=document.querySelector("#cnqr-profile-popup-ac-users");a&amp;&amp;a.value&amp;&amp;_analytics.trim(a.value)&amp;&amp;_analytics.trackEvent("Header links","Profile","Admin search")})})();(function(){var b=document.querySelector("#end-admin-session-btn");_analytics.onEvent(b,"click",function(){_analytics.trackEvent("Header links","Profile","End admin")})})();
+(function(){for(var b=document.querySelectorAll(".cnqr-app-footer a"),a=0;a&lt;b.length;a++)_analytics.onEvent(b[a],"click",function(){var a=this.textContent||this.innerText,a=/login-history-link/i.test(_analytics.getAttribute(this,"id"))?"Login History":_analytics.trim(a);_analytics.trackEvent("Footer","Footer",a)})})();_siteChannel.publishEvent("Run Third Party Tags");</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332241'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332242'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332243'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332244'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332245'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332246'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332247'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332248'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332249'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332250'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332251'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332252'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332253'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332254'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332255'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332256'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332257'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332258'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332259'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332260'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332261'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332262'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332263'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332264'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332265'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332266'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332267'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332268'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332269'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332270'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332271'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script><script type="text/javascript" id="">(function(){function d(a){return a&amp;&amp;a.trim()||"(not set)"}function f(){var a={h:"Hotel",a:"Flight",c:"Car",t:"Taxi",l:"Limo",r:"Rail"};if(document.frmMain&amp;&amp;document.frmMain.tripMeans)return a[document.frmMain.tripMeans.value.toLowerCase()]}var a=google_tag_manager["GTM-WGMG5K"].macro('gtm1430656332272'),c=d(a.id),b=d(a.value),e=d(a.textContent||a.innerText);/ui-button|btn-/i.test(a.className)||/button/i.test(a.nodeName)?/save/i.test(e)||_analytics.trackEvent("Buttons Click",e,c):/button|submit/i.test(a.type)&amp;&amp;(/save/i.test(b)||_analytics.trackEvent("Buttons Click",
+b,c));if(/launchwizard|btnFlightStatus/i.test(c)){switch(c){case "btnCarLaunchWizard":b="Tab Car";break;case "btnAirLaunchWizard":b="Tab Flight";break;case "btnHotelLaunchWizard":b="Tab Hotel";break;case "btnLimoLaunchWizard":b="Tab Limo";break;case "btnRailLaunchWizard_2V":b="Tab Rail";break;case "btnFlightStatus":b="Tab Flight Status";break;default:b="(not set)"}_analytics.trackEvent("Search Click",b)}(/x-tab-strip-text/i.test(a.className)||/tab/i.test(_analytics.getAttribute(a.parentNode,"role")))&amp;&amp;
+_analytics.trackEvent("Tabs Click",e,c);/tooltip/i.test(_analytics.getAttribute(a,"data-toggle"))&amp;&amp;_analytics.trackEvent("Tooltips Click","Quick Help");/bookingTrip/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Booking",d(f()));/helplink/i.test(_analytics.getAttribute(a,"data-analytics"))&amp;&amp;_analytics.trackEvent("Help Click",e)})();</script></body></html>
