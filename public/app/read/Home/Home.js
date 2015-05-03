@@ -5,11 +5,12 @@
 
         var _calOnly = 
         "Only available on appointment or meeting request items.";
-        var item = Office.cast.item.toItemRead(Office.context.mailbox.item);
-
+        var item;
 
     // The Office initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
+        item = Office.cast.item.toItemRead(Office.context.mailbox.item);
+
         $(document).ready(function () {
             app.initialize();
 
