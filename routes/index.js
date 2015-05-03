@@ -9,9 +9,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Book it Simon!!' });
 });
 router.get('/update', function(req, res, next) {
-  touch('/srv/bookitsimon.run',null,null);
+  touch('/srv/bookitsimon.run');
   res.writeHead(200, { "Content-Type": "application/json" });
-  res.end("Updated Successfully");
+  res.end();
 });
 router.get('/sample', api.getSample);
 router.post('/search', api.search);
