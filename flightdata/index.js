@@ -99,7 +99,40 @@ module.exports = {
 		});*/
 
 		var theData = JSON.parse(fs.readFileSync('./flightdata/flightdata-2.json'));
-		res.json(theData);
+
+		var results = [
+			{
+				carrier: "US",
+				fare: "USD1000",
+				origDep: "DCA",
+				origFlightime: "11:25 am",
+				origDest: "SEA",
+				origDepTime: "05:03 pm",
+				origDuration: "8h 38m",
+				retDep: "DCA",
+				retFlightime: "11:25 am",
+				retDest: "SEA",
+				retDepTime: "05:03 pm",
+				retDuration: "8h 38m"
+			},
+			{
+				carrier: "US",
+				fare: "USD1000",
+				origDep: "DCA",
+				origFlightime: "11:25 am",
+				origDest: "SEA",
+				origDepTime: "05:03 pm",
+				origDuration: "8h 38m",
+				retDep: "DCA",
+				retFlightime: "11:25 am",
+				retDest: "SEA",
+				retDepTime: "05:03 pm",
+				retDuration: "8h 38m"
+			}
+		];
+		res.render('flightdata', {
+			flightdata: results
+		});
 	}
 
 }

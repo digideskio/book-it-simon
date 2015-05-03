@@ -1,0 +1,18 @@
+<% flightdata.forEach(function(segment, i) { %>
+<div id="data-<%= i %>">
+	<div class="farediv">
+	    <div class="fareest">$<%= segment.fare %></div>
+	    <button name="result" type="button">Select</button>
+	</div>
+	<div>
+	    <div class="pull-left cnqr-bold" style="width:70%;">
+	        <div><%= segment.carrier %></div>
+	    </div>
+	</div>
+	<abbr><%= segment.origDep %></abbr><span class="flighttime"><%= segment.origFlightime %></span>
+	<span>Outbound flight:</span><abbr ><%= segment.origDest %></abbr><spanclass="flighttime"><%= segment.origDepTime %></span> <%= segment.origDuration %>
+	<span>Return flight:</span><abbr><%= segment.retDep %></abbr><span class="flighttime"><%= segment.retFlightime %>/span>
+	<span>&nbsp;<img src="/static/images/arrows/arrow-4-E-black.png" class="flightarrow" alt="To">&nbsp;</span>
+	<span>Return flight:</span><abbr><%= segment.retDest %></abbr><span class="flighttime"><%= segment.retDepTime %></span> <%= segment.retDuration %>
+</div>
+<% }); %>
