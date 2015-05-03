@@ -12,8 +12,6 @@
         item = Office.cast.item.toItemRead(Office.context.mailbox.item);
 
         $(document).ready(function () {
-            app.initialize();
-
             displayItemDetails();
             window.createAppointment = createAppointment;
 
@@ -49,67 +47,5 @@
         return ""+(date.getMonth()+1).toString()
             +'/'+date.getDate().toString()
             +'/'+date.getFullYear().toString();
-    }
-
-    // Displays the "Subject" and "From" fields, based on the current mail item
-    function displayItemDetails() {
-        $('#subject').text(item.subject);
-
-        var from;
-        if (item.itemType === Office.MailboxEnums.ItemType.Message) {
-            from = Office.cast.item.toMessageRead(item).from;
-        } else if (item.itemType === Office.MailboxEnums.ItemType.Appointment) {
-            from = Office.cast.item.toAppointmentRead(item).organizer;
-        }
-
-        if (from) {
-            $('#from').text(from.displayName);
-            $('#from').click(function () {
-                app.showNotification(from.displayName, from.emailAddress);
-            });
-        }
-
-        var _getStart = function() {
-            if (_isCalendarItem()) {
-                $("td#start").html(_getDateString(item.start));
-            } else  {
-                $("td#start").text(_calOnly);
-            }
-        }
-
-        var _getEnd = function() {
-            if (_isCalendarItem()) {
-                $("td#end").html(_getDateString(item.end));
-            }else{
-                $("td#end").text(_calOnly);
-            }
-        }
-
-        _getStart();
-
-        _getEnd();
-
-    }
-
-    function getAppointmentDateFromBody() {
-        
-    }
-
-    function createAppointment() {
-        var formParameters =
-        {
-            "requiredAttendees" : ["wendy@contoso.com", "derek@contoso.com"],
-            "optionalAttendees" : ["shane@contoso.com", "michael@contoso.com"],
-            "start" : new Date("September 27, 2012 11:15:00"),
-            "end" : new Date("September 27, 2012 12:30:00"),
-            "location" : "Conf room 200",
-            "resources" : ['sound', 'lighting', 'recording'],
-            "subject" : "Next rehearsal",
-            "body" : "This is about the next rehearsal."
-        }
-
-        // Display a form to create an appointment with
-        // the specified parameters.
-        Office.context.mailbox.displayNewAppointmentForm(formParameters);
     }
 })();
