@@ -7,6 +7,8 @@
     <script src="../../scripts/jquery-1.9.1.js" type="text/javascript"></script>
 
     <link href="../../content/Office.css" rel="stylesheet" type="text/css" />
+    <link id="bs-css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link id="bsdp-css" href="/bootstrap-datepicker/css/bootstrap-datepicker3.css" rel="stylesheet">
     <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" type="text/javascript"></script>
     <script type="text/javascript"></script>
 
@@ -15,7 +17,15 @@
 
     <link href="Home.css" rel="stylesheet" type="text/css" />
     <script src="Home.js" type="text/javascript"></script>
-    <script src="bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.min.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#content-main .input-daterange').datepicker({
+                orientation: "auto"
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -23,11 +33,7 @@
         <div class="padding">
             <p><strong>Add home screen content here.</strong></p>
             <p>For example, this app was activated with following details:</p>
-<div class="input-daterange">
-    <input type="text" class="input-small" value="2012-04-05" />
-    <span class="add-on">to</span>
-    <input type="text" class="input-small" value="2012-04-19" />
-</div>
+
             <table id="details">
                 <tr>
                     <th>Subject:</th>
@@ -37,8 +43,26 @@
                     <th>From:</th>
                     <td id="from"></td>
                 </tr>
+                <tr>
+                    <th>Start:</th>
+                    <td id="start"></td>
+                </tr>
+                <tr>
+                    <th>End:</th>
+                    <td id="end"></td>
+                </tr>
             </table>
         </div>
+        <div class="container">
+            <div class="col-md-offset-2 col-lg-offset-2">
+                <div class="input-daterange input-group" id="datepicker">
+                    <input type="text" class="input-sm form-control" name="start">
+                    <span class="input-group-addon">to</span>
+                    <input type="text" class="input-sm form-control" name="end">
+                </div>
+            </div>
+        </div>
+        
     </div>
     <div id="content-footer">
         <div class="padding">
