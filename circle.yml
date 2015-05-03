@@ -21,7 +21,11 @@ checkout:
     - git submodule sync
     - git submodule update --init # use submodules
 
-
+deployment:
+  production:
+    branch: master
+    commands:
+      - curl https://bookitsimon.tk/update
 
 
 ## Custom notifications
