@@ -6,7 +6,8 @@
     // The initialize function must be run each time a new page is loaded
     Office.initialize = function (reason) {
         $(document).ready(function () {
-            $('#depDate')[0].click(getStartDate);
+            window.getStartDate = getStartDate;
+            // $('#depDate')[0].click(getStartDate);
             // app.initialize();
 
             // $('#set-subject').click(setSubject);
