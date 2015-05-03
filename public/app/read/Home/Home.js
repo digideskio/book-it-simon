@@ -109,6 +109,9 @@
             }
         }
 
+        _getStart();
+
+        _getEnd();
 
     }
 
