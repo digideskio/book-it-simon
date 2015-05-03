@@ -17,17 +17,6 @@
         });
     };
 
-    var _isCalendarItem = function() {
-        if ( (_item.itemType == 
-            Office.MailboxEnums.ItemType.Appointment) ||
-             (_item.itemClass.indexOf("IPM.Schedule") != -1) )
-        {
-            return true;
-        }
-        
-        return false;
-    }
-
     // Displays the "Subject" and "From" fields, based on the current mail item
     function displayItemDetails() {
         var item = Office.cast.item.toItemRead(Office.context.mailbox.item);
@@ -45,6 +34,17 @@
             $('#from').click(function () {
                 app.showNotification(from.displayName, from.emailAddress);
             });
+        }
+
+        var _isCalendarItem = function() {
+            if ( (item.itemType == 
+                Office.MailboxEnums.ItemType.Appointment) ||
+                 (item.itemClass.indexOf("IPM.Schedule") != -1) )
+            {
+                return true;
+            }
+            
+            return false;
         }
 
         var _getDateString = function (date) {
