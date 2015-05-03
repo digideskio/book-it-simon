@@ -99,6 +99,15 @@ module.exports = {
 		});*/
 
 		var theData = JSON.parse(fs.readFileSync('./flightdata/flightdata-2.json'));
+		var carriers = {}, cities = {}, trips = [], tripLeg = [];
+		carriers[theData.trips.data.carrier.code] = theData.trips.data.carrier.name;
+		cities[theData.trips.data.city.code] = theData.trips.data.city.name;
+		theData.trips.tripOption.forEach(function(value, i){
+			value.slice.forEach(function(segment, j){
+				// TO do, parse this data
+			});
+			;
+		});
 
 		var results = [
 			{
