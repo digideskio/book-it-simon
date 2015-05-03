@@ -50,13 +50,15 @@
 <div class="container">
     <div id="content-main" class="row">
         <!--<div class="col-lg-3 col-md-2 col-sm-2"></div>-->
-        <div class="row row-centered">
-            <div class="col-lg-6 col-md-8 col-sm-8 col-centered">
-                <form action="/search" method="post">
-                    <table>
-                        <tr>
-                            <td>
-                    <div class="row">
+
+            <form action="/search" method="post">
+
+
+
+            <div class="col-lg-4 col-md-4 col-sm-3 col-lg-offset-2">
+
+
+
                         <h3>Departure</h3>
                         <div class="form-group">
                             <label for="depOrig">From</label>
@@ -69,20 +71,18 @@
                         <div class="form-group">
                             <label for="depDate">Date</label>
                             <input id="depDate" name="departureFlight.date" type="text" value="2015-05-08" class="form-control"/>
-                            <div class="form-group">
-                                <label for="depCabin">Preferred Cabin</label>
-                                <select id="depCabin" name="departureFlight.preferredCabin">
-                                    <options value="COACH" selected>Coach<option>
-                                        <options value="BUSINESS">Business Class<option>
-                                            <options value="FIRST">First Class<option>
-                                </select>
-                            </div>
                         </div>
-                    </div>
-                            </td>
-                            <td width="60px"></td>
-                            <td>
-                    <div class="row">
+                        <div class="form-group">
+                            <label for="depCabin">Preferred Cabin</label>
+                            <select id="depCabin" name="departureFlight.preferredCabin">
+                                <option value="COACH" selected>Coach<option>
+                                <option value="BUSINESS">Business Class<option>
+                                <option value="FIRST">First Class<option>
+                            </select>
+                        </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-3 ">
                         <h3>Return</h3>
                         <div class="form-group">
                             <label for="retOrig">From</label>
@@ -99,32 +99,32 @@
                         <div class="form-group">
                             <label for="retCabin">Preferred Cabin</label>
                             <select id="retCabin" name="returnFlight.preferredCabin">
-                                <options value="COACH" selected>Coach<option>
-                                    <options value="BUSINESS">Business Class<option>
-                                        <options value="FIRST">First Class<option>
+                                <option value="COACH" selected>Coach<option>
+                                <option value="BUSINESS">Business Class<option>
+                                <option value="FIRST">First Class<option>
                             </select>
                         </div>
-                    </div>
-                            </td>
-                        <tr>
-                    </table>
-
-
-                    <div class="row row-centered">
-                        <h3>Options</h3>
-                        <div class="form-group-inline">
-                            <label for="numPassengers">Departure</label>
-                            <input id="numPassengers" name="passengers.adultCount" type="text" value="1" class="form-control"/>
-                            <label for="nonstop">Non Stop</label>
-                            <input id="nonstop" type="checkbox">
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
             </div>
 
-        </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-3 col-lg-offset-2">
+                <h3>Options</h3>
+                <div class="form-group-inline">
+                    <label for="numPassengers"># Passangers</label>
+                    <input id="numPassengers" name="passengers.adultCount" type="text" value="1" class="form-control"/>
+                    <label for="nonstop">Non Stop</label>
+                    <input id="nonstop" type="checkbox">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+            </form>
+
         <!--<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>-->
 
         <div class="row">&nbsp;</div>
