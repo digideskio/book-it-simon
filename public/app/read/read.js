@@ -12,7 +12,6 @@
         item = Office.cast.item.toItemRead(Office.context.mailbox.item);
 
         $(document).ready(function () {
-            displayItemDetails();
             window.createAppointment = createAppointment;
 
             // console.log(JSON.stringify(item.location));
