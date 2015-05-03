@@ -21,15 +21,8 @@ checkout:
     - git submodule sync
     - git submodule update --init # use submodules
 
-## Customize dependencies
-dependencies:
-  pre:
-    - npm install # install from a different package manager
 
-## Customize deployment commands
-deployment:
-  staging:
-    branch: master
+
 
 ## Custom notifications
 #notify:
