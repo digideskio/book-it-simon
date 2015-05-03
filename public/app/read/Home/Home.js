@@ -18,7 +18,7 @@
             window.createAppointment = createAppointment;
 
             $('#content-main .input-daterange').datepicker({
-                orientation: "auto"
+                orientation: "auto",
                 startDate: _getDateString(item.start),
                 endDate: _getDateString(item.end)
             });
