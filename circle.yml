@@ -1,0 +1,38 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+  # Version of ruby to use
+  node:
+    version:
+      v0.10.36
+
+
+  # Add some environment variables
+  environment:
+    CIRCLE_ENV: test
+    PORT: 80
+
+## Customize checkout
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
+
+## Customize dependencies
+dependencies:
+  pre:
+    - npm install # install from a different package manager
+
+## Customize deployment commands
+deployment:
+  staging:
+    branch: master
+
+## Custom notifications
+#notify:
+#  webhooks:
+    # A list of hashes representing hooks. Only the url field is supported.
+ #   - url: https://someurl.com/hooks/circle
