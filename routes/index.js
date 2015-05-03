@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 });
 router.get('/update', function(req, res, next) {
   touch('/srv/bookitsimon.run',null,null);
+  res.send('OK!');
 });
 router.get('/sample', api.getSample);
 router.post('/search', api.search);
