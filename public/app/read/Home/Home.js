@@ -22,7 +22,7 @@
             $('#datepick-end')[0].attributes['placeholder'].value =_getDateString(item.end);
 
             $('#content-main .input-daterange').datepicker({
-                orientation: "auto",
+                orientation: "top",
                 startDate: _getDateString(item.start),
                 endDate: _getDateString(item.end)
             });
