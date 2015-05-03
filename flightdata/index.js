@@ -1,4 +1,3 @@
-var flightData = require("./flightdata.json");
 var utils = require('../utils/functions')
 
 
@@ -32,6 +31,10 @@ module.exports = {
 		};
 
 		res.json(payload);
+	},
+	search: function(req, res, next){
+		var body = utils.trimBody(req.body);
+		res.json();
 	}
 
 }
